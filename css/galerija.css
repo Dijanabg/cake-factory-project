@@ -1,0 +1,27 @@
+header{
+    height: 400px;
+}
+
+.cetiri img{
+    width: 50%;
+}
+.galerija{
+  padding-top: 5%;
+  display: grid;    
+  grid-template-columns: 22% 22% 22%;
+  justify-content: center;
+  gap: 30px 50px;
+}
+.galerija img{
+  border: 5px solid rgb(255, 255, 255);
+  border-radius: 30%;
+  margin: 5px;
+  transition: transform .2s; /* Animation */
+  margin: 0 auto;
+}
+
+.galerija img:hover{
+  border: 5px groove #791245;
+  border-radius: 30%;
+  transform: scale(2); 
+}/* (150% zoom - Note: if the zoom is too large, it will go outside of the viewport) */

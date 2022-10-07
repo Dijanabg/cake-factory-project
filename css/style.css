@@ -1,0 +1,366 @@
+/*****************************************
+/* CSS
+/*******************************************/
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,400;0,700;1,600&display=swap');
+/*font-family: 'Poppins', sans-serif;*/
+/* .color1 {color: #0ffff7;}
+.color2 {color: #4C0033;}
+.color3 {color: #790252;}
+.color4 {color: #AF0171;}
+.color5 {color: #E80F88} 
+*/
+@import url('https://fonts.googleapis.com/css2?family=Allura&display=swap');
+/* font-family: 'Allura', cursive, sans-serif; */
+/* Box Model Hack */
+*{
+  box-sizing: border-box;
+  font-family: 'Poppins', sans-serif;
+  margin: 0;
+  padding: 0;
+  border: none;
+  outline: none;
+  text-decoration: none;
+  transition: .2s linear;
+}
+
+html{
+  font-size: 62.5%;
+  overflow-x: hidden;
+  scroll-padding-top: 7rem;
+  scroll-behavior: smooth;
+  width: 100vw;
+  background-color: #945d7f;
+}
+
+.button {
+  width: 10rem;
+  margin-top: 10%;
+  background-color: #791245;
+  padding: 5% 5%;
+  font-weight: 700;
+  text-transform: uppercase;
+  color: #fff;
+  border: 2px solid #fff;
+  border-radius: 5% 30%;
+}
+.button a{
+  color: #fff;
+}
+.button:hover {
+  background-color: #df3ca8;
+}
+h2,h3,h4,h5,h6{
+  color: #340708;
+}
+p{
+  color:darkred;
+}
+h2{
+  color: #df3ca8;
+  font-size: 4rem;
+  font-family: 'Allura', cursive, sans-serif;
+  padding-bottom: 10px;
+}
+a{
+  color: #340708;
+}
+a:hover{
+  color: #df3ca8;
+}
+
+/* *********
+*****HEADER SECTION
+***********
+********* */
+header{
+  clip-path: polygon(0 0, 100% 0, 100% 100%, 0 85%);
+  /* top: 0;
+  right: 0;
+  left: 0; */
+  background-color: #e6afd1;
+  height: 70vh;
+}
+
+.nav{
+  display: flex;
+  justify-content: space-between;
+  height: 50px;
+  align-items: center;
+  padding: 0 7%;
+  text-transform: uppercase;
+  position: sticky;
+  top: 0;
+}
+
+.nav:hover{
+  background-color: #945d7f;
+}
+.nav a:hover{
+  color: #df3ca8;
+}
+.nav .active{
+  background-color: #791245;
+  color: antiquewhite;
+  padding: 5% 10%;
+}
+.dva ul{
+  list-style: none;
+  display: flex;
+  justify-content: space-between;
+
+}
+
+.dva ul li a{
+  font-weight: 700;
+  margin: 0 3rem;
+  color: #140c11;
+  font-size: 1.3rem;
+}
+.jedan{
+  display: flex;
+}
+.jedan img{
+  width: 2.5rem;
+}
+
+#span1{
+  align-self: center;
+  color:#791245;
+  font-size: 1.2rem;
+}
+#head{
+  width: 100%;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  text-align: center;
+}
+.tri{
+  width: 30%;
+}
+.cetiri{
+  width: 40%;
+  padding-top: 5%;
+}
+.cetiri img{
+  width: 80%;
+}
+
+#head h1{
+  color: #df3ca8;
+  text-align: center;
+  font-size: 6rem;
+  font-family: 'Allura', cursive, sans-serif; 
+}
+
+/******************************************
+BURGER MENI
+/*******************************************/
+
+/******************************************
+/* second section
+/******************************************/
+.row {
+  display: flex;
+  width: 100%;
+  height: 600px;
+  align-items: center;
+  margin-left: 5%;
+  margin-right: 10%;
+}
+.col:first-child{
+  width: 25%;
+  padding: 5%;
+  text-align: center;
+}
+.col h2{
+  color: #340708;
+}
+.col p{
+  color: white;
+}
+.row:nth-child(2){
+  /* width: 60%; */
+  display: flex;
+  flex-wrap: nowrap;
+}
+.card {
+  width: 180px;
+  height: 350px;
+  display: inline-block;
+  border-radius: 10px;
+  padding: 15px 5px;
+  cursor: pointer;
+  margin: 10px;
+  background-position: center;
+  background-size: cover;
+  transition: transform 0.5s;
+}
+  
+.card1 {
+  background-image: url(../img/wed15.PNG);
+}
+.card2 {
+  background-image: url(../img/dec15.PNG);
+}
+.card3 {
+  background-image: url(../img/slika12.PNG);
+}
+.card4 {
+  background-image: url(../img/kolaci4.PNG);
+}
+.card:hover {
+  transform: translateY(-10px)
+}
+
+.card h5 {
+  color: #fff;
+  background-color: #791245;
+  width: 50%;
+  padding:  5% 0;
+  text-align: center;
+  text-shadow: 0 0 5px #df3ca8;
+  text-transform: uppercase;
+}
+/* ********
+**********
+********sekcija O NAMA
+************
+********* */
+
+.onama{
+  clip-path: polygon(0 16%, 100% 0%, 100% 100%, 0 84%);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 700px;
+  background-color: #e6afd1;
+  padding: 10%;
+}
+.radnja{
+  width: 50%;
+}
+.radnja img{
+  width: 100%;
+  border: 10px groove #791245;
+  border-radius: 15px;
+}
+
+.onama .rad{
+  width: 50%;
+  margin-left: 10%;
+}
+
+.rad h3{
+  font-size: 1.5rem;
+  padding-bottom:  10px;
+  color: #791245;
+}
+.rad button{
+  text-align: center;
+  margin-top: 20px;
+  width: 50%;
+}
+
+/* *****
+******
+***sekcija PORUCI
+******
+************** */
+
+.poruci{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  height: 400px;
+  margin: 10% 10%;
+}
+
+.poziv{
+  text-align: center;
+  width: 50%;
+}
+
+.poziv h2{
+  color: #340708;
+}
+
+.poziv h3{
+  color: #fff;
+  padding: 10px;
+}
+
+.slika{
+  align-self: center;
+  position: relative;
+  width: 50%;
+  height: auto;
+  margin-left: 10%;
+}
+
+.slika img{
+  border: 15px groove #791245;
+  border-radius: 15px;
+  width: 90%;
+}
+
+.slika a button{
+  position: absolute;
+  top: 50%;
+  left: 45%;
+  transform: translate(-50%, -50%);
+}
+/* *******
+******
+****FOOTER
+*******
+*** */
+.linija{
+  width: 100%;
+  height: 200px;
+  background-color: #e6afd1;
+  clip-path: polygon(0 96%, 100% 10%, 100% 100%, 0% 100%);
+}
+
+.footer{
+  height: 200px;
+  display: flex;
+  justify-content: space-around;
+  align-items: flex-start;
+  text-align: center;
+  margin: 10% 5% 0 5%;
+}
+
+.footer h3{
+  font-size: 1.8rem;
+  color: #791245;
+}
+
+.foot1 ul, .foot2 ul{
+  list-style: none;
+  text-align: center;
+  font-size: 1.5rem;
+}
+
+.foot2 ul{
+  display: flex;
+  justify-content: space-around;
+  padding-top: 20px;
+}
+
+.foot1 li a, .foot2 li a{
+  color: white;
+  font-size: 2rem;
+}
+
+.foot1 li a:hover, .foot2 li a:hover{
+  color: #df3ca8;
+  font-size: 2rem;
+}
+
+footer p{
+  color: #791245;
+  text-align: center;
+  font-size: 1.3rem;
+  padding-bottom: 20px;
+}
