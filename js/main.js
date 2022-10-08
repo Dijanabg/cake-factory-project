@@ -31,29 +31,68 @@ for(let i = 0; i < listItems.length; i++){
 *******************/
 
 
-$(".polje").on("click", function(){
-    // let polje = $(".polje").val();
-    if ($(this == 0)){
-        $(this).css({"background-color": "lightblue"});
-}
-})
+// $(".polje").on("click", function(){
+//     // let polje = $(".polje").val();
+//     if ($(this == 0)){
+//         $(this).css({"background-color": "lightgrey"});
+// }
+// });
 
-$(".polje").keypress(function(){
-    //console.log( "Handler for .keypress() called." );
-    let polje = $(".polje").val();
-    if (polje == " "){
-        $(this).css({"background-color": "lightblue"});
-    }else{
-        $(this).css({"background-color": "lightgreen"});
-    }55
-})
+// $(".polje").keypress(function(){
+//     //console.log( "Handler for .keypress() called." );
+//     let polje = $(".polje").val();
+//     if (polje == " "){
+//         $(this).css({"background-color": "lightgrey"});
+//     }else{
+//         $(this).css({"background-color": "grey"});
+//     }
+// });
 
-$(".polje").keyup(function() {
-    let max = 5;
+$("#forma_ime").keyup(function() {
+    let max = 8;
     if ($(this).val().length > max) {
         $(this).val($(this).val().substr(0, max));
         
         //Take action, alert or whatever suits
-        alert("This field can take a maximum of 5 characters");
+        alert("This field can take a maximum of 8 characters");
     }
+});
+$('#forma_ime').on('input', function() {
+	let input=$(this);
+	let is_name=input.val();
+	if(is_name){input.removeClass("invalid").addClass("valid");}
+	else{input.removeClass("valid").addClass("invalid");}
+});
+
+$('#forma_email').on('input', function() {
+	let input=$(this);
+	let re = /^[a-zA-Z0-9.!#$%&'*+/=?^_`{|}~-]+@[a-zA-Z0-9-]+(?:\.[a-zA-Z0-9-]+)*$/;
+	let is_email=re.test(input.val());
+	if(is_email){input.removeClass("invalid").addClass("valid");}
+	else{input.removeClass("valid").addClass("invalid");}
+});
+
+$('#forma_poruka').keyup(function(event) {
+	let input=$(this);
+	let message=$(this).val();
+	console.log(message);
+	if(message){input.removeClass("invalid").addClass("valid");}
+	else{input.removeClass("valid").addClass("invalid");}	
+});
+$("#forma_submit").click(function(event){
+	var form_data=$("#forma").serializeArray();
+	var error_free=true;
+	for (var input in form_data){
+		var element=$("#forma_"+form_data[input]['name']);
+		var valid=element.hasClass("valid");
+		var error_element=$("span", element.parent());
+		if (!valid){error_element.removeClass("error").addClass("error_show"); error_free=false;}
+		else{error_element.removeClass("error_show").addClass("error");}
+	}
+	if (!error_free){
+		event.preventDefault(); 
+	}
+	else{
+		alert('No errors: Form will be submitted');
+	}
 });

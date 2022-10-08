@@ -13,22 +13,39 @@ header{
     display: flex;
     justify-content: space-between;
     align-items: center;
-    width: 80vw;
+    width: 100vw;
+    text-align: center;
+    background-color: rgba(255, 255, 255, 0.185);
+    padding: 10vh 0;
+}
+.koraci h2{
+    color: darkred;
+}
+.koraci{
+    padding-left: 5vw;
+}
+.koraci p{
+    font-size: 1.4rem;
+    padding-top: 5%;
 }
 
 /* ******
 ******FORM
 *********** */
-#kontejner{
-  
-}
-#login{
-  width: 300px;
+#forma{
+    background-image: url(../img/chocolate.jpg);
+    background-size: cover;
+    margin-right: 10vw;
+    width: 30vw;
   text-align: center;
-  padding: 50px 0;
+  padding: 50px;
   margin: 0 auto;
+  width: 40vw;
+  color: white;
 }
-#password, #ime{
+
+#forma_email, #forma_ime, #grad, #forma_poruka{
+  width: 30vw;
   margin: 20px 0;
   border: 5px solid darkred;
 }
@@ -37,6 +54,28 @@ button{
   background-color: brown;
   border: 5px solid darkred;
   border-radius: 30%;
-  color: aliceblue;
+  color: rgb(255, 240, 242);
   margin-top: 10%;
+}
+#forma_poruka{
+    height: 200px;
+}
+
+/* validacija */
+.error{
+	display: none;
+	margin-left: 10px;
+}		
+
+.error_show{
+	color: red;
+	margin-left: 10px;
+}
+
+input.invalid, textarea.invalid{
+	border: 2px solid red;
+}
+
+input.valid, textarea.valid{
+	border: 2px solid green;
 }

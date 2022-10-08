@@ -60,29 +60,57 @@
             <div class="kontakt">
                 <div class="koraci">
                   <h2>Kontaktirajte nas</h2>
-                  <p>Vaše je da osmilite dizajn torte, <br>da izaberete koji ukusi želite da se nadju u torti, <br>koliko velika želite da bude.
+                  <p>Vaše je da osmislite dizajn torte, <br>da izaberete koji ukusi želite da se nadju u torti, <br>koliko velika želite da bude.
                     <br>Naše je da se potrudimo da Vaše ideje sprovedemo u delo.
-                  </p><hr><hr>
+                  </p>
+                  <br><br>
                   <p>Ukoliko želite kolače za slavu<br>
                     mafine ili bilo koju drugu slatkoću,<br>
                     takođe se javite da se dogovorimo.
                   </p>
+                 <p>Ako imate pitanja, 
+                    <a href="mailto:dijanabgjovanovic@gmail.com" target="top">Pišite Nam!</a>
+                </p> 
+                <p>
+                    <p>Pozovite nas na <a href="tel:0112225577">011/222-22-2222</a></p>
+                </p>
                 </div>
-                <div class="form">
-                    <h1 id="naslov">Validation form</h1>
-		    <div id="kontejner">
-			<form action="" id="login">
-				<label for="name">Korisnicko ime</label>
-				<br>
-				<input type="text" class="polje" id="ime">
-				<br>
-				<label for="password"  >Lozinka</label>
-				<br>
-				<input type="text" class="polje" id="password" >
-				<br>
-				<button type="submit">Pošalji</button>
-			</form>
-		</div>
+                
+                <form id="forma" method="post" action="">
+                    <!-- ime -->
+                    <div>
+                        <label for="forma_ime">Ime:</label>
+                        <input type="text" id="forma_ime" name="ime"></input>
+                        <span class="error">This field is required</span>
+                    </div>
+                    <!-- Email -->
+                    <div>
+                        <label for="forma_email">Email:</label>
+                        <input type="email" id="forma_email" name="email"></input>
+                        <span class="error">A valid email address is required</span>				
+                    </div>		
+                	<!-- Grad -->
+                    <br>
+                        <select id="grad" name="grad">
+                            <option value="beograd">Beograd</option>
+                            <option value="mladenovac">Mladenovac</option>
+                            <option value="sopot">Sopot</option>
+                            <option value="lazarevac">Lazarevac</option>
+                        </select>
+                        <br>
+                    <!-- Message -->
+                    <div>
+                        <label for="forma_poruka">Poruka:</label>
+                        <textarea id="forma_poruka" name="poruka"></textarea>
+                        <span class="error">This field is required</span>												
+                    </div>					
+                    <!-- Submit Button -->
+                    <div id="forma_submit">				
+                        <button type="submit">Pošalji</button>
+                    </div>
+                </form>
+                
+		            </div>
                 </div>
             </div>
             
