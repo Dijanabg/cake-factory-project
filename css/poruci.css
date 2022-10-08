@@ -1,0 +1,42 @@
+header{
+    height: 400px;
+}
+
+.cetiri img{
+    width: 50%;
+}
+
+/* ****
+*****MAIN section
+************ */
+.kontakt{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 80vw;
+}
+
+/* ******
+******FORM
+*********** */
+#kontejner{
+  
+}
+#login{
+  width: 300px;
+  text-align: center;
+  padding: 50px 0;
+  margin: 0 auto;
+}
+#password, #ime{
+  margin: 20px 0;
+  border: 5px solid darkred;
+}
+
+button{
+  background-color: brown;
+  border: 5px solid darkred;
+  border-radius: 30%;
+  color: aliceblue;
+  margin-top: 10%;
+}

@@ -90,6 +90,7 @@ header{
   text-transform: uppercase;
   position: sticky;
   top: 0;
+  background-color: #945d7f8e;
 }
 
 .nav:hover{

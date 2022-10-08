@@ -6,22 +6,56 @@ header{
     width: 50%;
 }
 .galerija{
-  padding-top: 5%;
-  display: grid;    
-  grid-template-columns: 22% 22% 22%;
-  justify-content: center;
-  gap: 30px 50px;
+  /* padding: 0; */
+  margin: 0 10%;
 }
-.galerija img{
-  border: 5px solid rgb(255, 255, 255);
-  border-radius: 30%;
-  margin: 5px;
-  transition: transform .2s; /* Animation */
-  margin: 0 auto;
+.list{
+  padding: 0 10vw;
+  list-style: none;
+  display: flex;
+  justify-content: space-between;
 }
 
-.galerija img:hover{
-  border: 5px groove #791245;
-  border-radius: 30%;
+.list li{
+  padding: 10px 15px;
+  border: 2px solid #710609;
+  margin-right: 10px;
+  margin-bottom: 10px;
+  font-weight: 700;
+  cursor: pointer;
+  transition: all .5s ease;
+  background-color: #fff;
+  color: #710609;
+}
+
+.list li.active, .list li:hover{
+  background-color: #710609;
+  color: #FFF;
+  border: 2px solid #f8029a;
+}
+
+.galerija .container2{
+overflow: hidden;
+display: flex;
+justify-content: space-around;
+align-items: center;
+flex-wrap: wrap;
+/* padding: 0; */
+}
+
+.galerija .container2 .img{
+  width: 25%;
+  margin: 3%;
+  /* padding: 3%; */
+  transition: transform .2s;
+}
+
+.galerija .container2 .img:hover{
   transform: scale(2); 
-}/* (150% zoom - Note: if the zoom is too large, it will go outside of the viewport) */
+}
+
+@media (max-width: 767px){
+  .galerija .container2 img{
+      margin-bottom: 15px
+  }
+}
