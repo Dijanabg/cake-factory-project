@@ -79,3 +79,41 @@ input.invalid, textarea.invalid{
 input.valid, textarea.valid{
 	border: 2px solid green;
 }
+
+@media only screen and (width<=750px) {
+    .nav .dva{
+      display: none;
+    }
+  
+    .fa-instagram{
+      display: none;
+    }
+  
+    .burger {
+      display: block;
+      /* display: flex;
+      justify-content: space-between;
+      align-items: center; */
+      color:#791245;
+      font-size: 1.2rem;
+      font-weight: 700;
+    }
+  
+    .burger-icon{
+      padding: 0 2% ;
+    }
+  
+    .burger:hover > .burger-menu{
+      display: block;
+      margin: 100px 0;
+      color: #791245;
+      background-color: #e6afd1;
+      list-style: none;
+      
+    }
+  
+    .burger-menu{
+      color: #340708;
+      padding: 50px 10px 10px 10px;
+    }
+  }
