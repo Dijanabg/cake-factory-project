@@ -18,7 +18,7 @@ header{
 
 .list li{
   padding: 10px 15px;
-  border: 2px solid #710609;
+  border: 5px solid #710609;
   margin-right: 10px;
   margin-bottom: 10px;
   font-weight: 700;
@@ -41,16 +41,16 @@ justify-content: space-around;
 align-items: center;
 flex-wrap: wrap;
 padding: 5vh 10vw;
-/* padding: 0; */
 }
 
 .galerija .container2 .img{
   width: 25%;
   margin: 3%;
-  /* padding: 3%; */
   transition: transform .2s;
 }
-
+.img img{
+  border: #710609 10px groove;
+}
 .galerija .container2 .img:hover{
   transform: scale(1.5); 
 }

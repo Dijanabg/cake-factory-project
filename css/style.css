@@ -43,27 +43,34 @@ html{
   border: 2px solid #fff;
   border-radius: 5% 30%;
 }
+
 .button a{
   color: #fff;
 }
+
 .button:hover {
   background-color: #df3ca8;
 }
+
 h2,h3,h4,h5,h6{
   color: #340708;
 }
+
 p{
   color:darkred;
 }
+
 h2{
   color: #df3ca8;
   font-size: 4rem;
   font-family: 'Allura', cursive, sans-serif;
   padding-bottom: 10px;
 }
+
 a{
   color: #340708;
 }
+
 a:hover{
   color: #df3ca8;
 }
@@ -81,7 +88,6 @@ header{
   height: 70vh;
 }
 
-
 .nav{
   display: flex;
   justify-content: space-between;
@@ -97,14 +103,17 @@ header{
 .nav:hover{
   background-color: #945d7f;
 }
+
 .nav a:hover{
   color: #df3ca8;
 }
+
 .nav .active{
   background-color: #791245;
   color: antiquewhite;
   padding: 5% 10%;
 }
+
 .dva ul{
   list-style: none;
   display: flex;
@@ -118,9 +127,11 @@ header{
   color: #140c11;
   font-size: 1.3rem;
 }
+
 .jedan{
   display: flex;
 }
+
 .jedan img{
   width: 2.5rem;
 }
@@ -130,6 +141,7 @@ header{
   color:#791245;
   font-size: 1.2rem;
 }
+
 #head{
   width: 100%;
   display: flex;
@@ -138,20 +150,23 @@ header{
   text-align: center;
   padding-left: 50px;
 }
+
 .tri{
   width: 30%;
 }
+
 .cetiri{
   width: 40%;
   padding-top: 5%;
 }
+
 .cetiri img{
   width: 80%;
 }
 
 #head h1{
   color: #ee5cbe;
-  text-shadow: #0b0106 1px 0 10px;
+  text-shadow: #0b0106 1px 0 5px;
   text-align: center;
   font-size: 6rem;
   font-family: 'Allura', cursive, sans-serif; 
@@ -172,27 +187,33 @@ BURGER MENI
   margin-left: 5%;
   margin-right: 10%;
 }
+
 .col:first-child{
   width: 25%;
   padding: 5%;
   text-align: center;
 }
+
 .col h2{
   color: #340708;
   text-shadow: rgb(255, 0, 170) 1px 0 10px;
 }
+
 .col p{
   color: white;
 }
+
 .row:nth-child(2){
   /* width: 60%; */
   display: flex;
   flex-wrap: nowrap;
 }
+
 .card {
   width: 180px;
   height: 350px;
   display: inline-block;
+  border: 5px solid #791245;
   border-radius: 10px;
   padding: 15px 5px;
   cursor: pointer;
@@ -205,17 +226,20 @@ BURGER MENI
 .card1 {
   background-image: url(../img/wed15.PNG);
 }
+
 .card2 {
   background-image: url(../img/dec15.PNG);
 }
 .card3 {
   background-image: url(../img/slika12.PNG);
 }
+
 .card4 {
   background-image: url(../img/kolaci4.PNG);
 }
+
 .card:hover {
-  transform: translateY(-10px)
+  transform: translateY(-10px);
 }
 
 .card h5 {
@@ -242,9 +266,11 @@ BURGER MENI
   background-color: #e6afd1;
   padding: 10%;
 }
+
 .radnja{
   width: 50%;
 }
+
 .radnja img{
   width: 100%;
   border: 10px groove #791245;
@@ -262,10 +288,50 @@ BURGER MENI
   color: #791245;
   text-shadow: rgb(255, 0, 170) 1px 0 10px;
 }
+
 .rad button{
   text-align: center;
   margin-top: 20px;
   width: 50%;
+}
+/* ******
+*****
+***sekcija BLOG
+**************
+***************** */
+.articles{
+  padding: 5rem 3rem;
+  display: grid;
+  grid-template-columns: repeat(3, 25vw);
+  gap: 2rem;
+  justify-content: center;
+}
+
+.article{
+  background: #f9f9f9;
+  border: 5px solid #791245;
+  border-radius: 2%;
+  width: 25vw;
+}
+
+.article img{
+  width: 24.2vw;
+  /* height: 30vw; */
+}
+
+.article h2{
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  font-size: 1.4rem;
+  text-align: center;
+  margin: 2rem 1rem;
+  color: #a90557;
+} 
+.article p{
+  margin: 1rem;
+}
+.article .button{
+  width: 20rem;
+ margin: 0.3rem 0 0.8rem 1rem;
 }
 
 /* *****
@@ -275,11 +341,13 @@ BURGER MENI
 ************** */
 
 .poruci{
+  clip-path: polygon(0 16%, 100% 0%, 100% 100%, 0 84%);
+  background-color: #e6afd1;
   display: flex;
   justify-content: space-between;
   align-items: center;
-  height: 400px;
-  margin: 10% 10%;
+  height: max-content;
+  padding: 10% 10%;
 }
 
 .poziv{
@@ -312,7 +380,8 @@ BURGER MENI
   width: 90%;
 }
 
-.slika a button{
+.slika a .button{
+  width: 15vw;
   position: absolute;
   top: 50%;
   left: 45%;
