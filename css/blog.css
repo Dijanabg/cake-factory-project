@@ -1,0 +1,31 @@
+header{
+    height: 400px;
+    background-image: url(../img/blog6.jpg);
+    background-size: cover;
+    background-position: 0 55%;
+}
+
+.cetiri img{
+    width: 50%;
+}
+
+#phead{
+    padding: 30%;
+}
+
+.articles{
+    grid-template-columns: repeat(2, 40vw);
+    padding: 10% 0;
+    row-gap: 10%;
+
+}
+.article{
+    width: 40vw;
+}
+.article img{
+    width: 39.25vw;
+  }
+.article h2{
+    text-align: center;
+    padding: 0;
+}

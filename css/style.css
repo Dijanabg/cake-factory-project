@@ -81,9 +81,6 @@ a:hover{
 ********* */
 header{
   clip-path: polygon(0 0, 100% 0, 100% 100%, 0 85%);
-  /* top: 0;
-  right: 0;
-  left: 0; */
   background-color: #e6afd1;
   height: 70vh;
 }
@@ -287,7 +284,10 @@ BURGER MENI
   width: 50%;
   margin-left: 10%;
 }
-
+.rad h2{
+  color: #340708;
+  text-shadow: rgb(255, 0, 170) 1px 0 10px;
+}
 .rad h3{
   font-size: 1.5rem;
   padding-bottom:  10px;
@@ -305,8 +305,14 @@ BURGER MENI
 ***sekcija BLOG
 **************
 ***************** */
+.blog h2{
+  padding-left: 11rem;
+  color: #340708;
+  text-shadow: rgb(255, 0, 170) 1px 0 10px;
+  font-size: 5rem;
+}
 .articles{
-  padding: 5rem 3rem;
+  padding: 0rem 3rem 5rem 3rem;
   display: grid;
   grid-template-columns: repeat(3, 25vw);
   gap: 2rem;
@@ -322,7 +328,6 @@ BURGER MENI
 
 .article img{
   width: 24.2vw;
-  /* height: 30vw; */
 }
 
 .article h2{
@@ -459,9 +464,6 @@ footer p{
 
   .burger {
     display: block;
-    /* display: flex;
-    justify-content: space-between;
-    align-items: center; */
     color:#791245;
     font-size: 1.2rem;
     font-weight: 700;
