@@ -81,6 +81,7 @@ header{
   height: 70vh;
 }
 
+
 .nav{
   display: flex;
   justify-content: space-between;
@@ -135,6 +136,7 @@ header{
   justify-content: space-around;
   align-items: center;
   text-align: center;
+  padding-left: 50px;
 }
 .tri{
   width: 30%;
@@ -148,7 +150,8 @@ header{
 }
 
 #head h1{
-  color: #df3ca8;
+  color: #ee5cbe;
+  text-shadow: #0b0106 1px 0 10px;
   text-align: center;
   font-size: 6rem;
   font-family: 'Allura', cursive, sans-serif; 
@@ -176,6 +179,7 @@ BURGER MENI
 }
 .col h2{
   color: #340708;
+  text-shadow: rgb(255, 0, 170) 1px 0 10px;
 }
 .col p{
   color: white;
@@ -256,6 +260,7 @@ BURGER MENI
   font-size: 1.5rem;
   padding-bottom:  10px;
   color: #791245;
+  text-shadow: rgb(255, 0, 170) 1px 0 10px;
 }
 .rad button{
   text-align: center;
@@ -284,10 +289,12 @@ BURGER MENI
 
 .poziv h2{
   color: #340708;
+  text-shadow: rgb(255, 0, 170) 1px 0 10px;
 }
 
 .poziv h3{
   color: #fff;
+  text-shadow: rgb(255, 0, 170) 1px 0 10px;
   padding: 10px;
 }
 
@@ -333,7 +340,7 @@ BURGER MENI
 }
 
 .footer h3{
-  font-size: 1.8rem;
+  font-size: 1.5rem;
   color: #791245;
 }
 
@@ -351,17 +358,16 @@ BURGER MENI
 
 .foot1 li a, .foot2 li a{
   color: white;
-  font-size: 2rem;
+  font-size: 1.2rem;
 }
 
 .foot1 li a:hover, .foot2 li a:hover{
   color: #df3ca8;
-  font-size: 2rem;
 }
 
 footer p{
   color: #791245;
   text-align: center;
-  font-size: 1.3rem;
+  font-size: 1.2rem;
   padding-bottom: 20px;
 }
