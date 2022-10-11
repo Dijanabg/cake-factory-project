@@ -1,0 +1,61 @@
+header{
+    height: 400px;
+    background-image: url(../img/blog1.jpg);
+    background-size: cover;
+    background-position: 0 55%;
+    background-color: transparent;
+}
+
+.cetiri img{
+    width: 50%;
+}
+
+.tri{
+    padding-top: 10%;
+    width: 60%;
+    text-align: center;
+}
+#phead{
+   background-color: rgba(92, 72, 84, 0.492);
+}
+main{
+    font-size: 1.2rem;
+}
+
+.div{
+    height: max-content;
+    padding: 15% 15%;
+}
+.div2, .div4{
+    clip-path: polygon(0 16%, 100% 0%, 100% 100%, 0 84%);
+    background-color: #e6afd1;
+}
+.div h2{
+    font-family: 'Poppins', Verdana, Geneva, Tahoma, sans-serif;
+    font-size: 2rem;
+}
+.div img{
+    width: 30%;
+}
+.div1, .div3{
+    padding: 5% 15%;
+}
+.div1 p, .div3 p{
+    color: #fff;
+}
+.div2, .div4{
+    display: flex;
+    flex-direction: column;
+}
+.div2 div, .div4 div{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.div2 div img, .div4 div img{
+    width: 150%;
+    margin-right: 10%;
+}
+.div2 h2, .div4 h2{
+    color: #ab1b63;
+}

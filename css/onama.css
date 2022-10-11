@@ -21,8 +21,9 @@ header{
 }
 
 .tajna p{
-    color: rgb(9, 7, 7);
+    color: rgb(114, 31, 31);
     font-size: 1.3rem;
+    padding-top: 3%;
 }
 
 .tajna img{
@@ -43,12 +44,12 @@ header{
 
 .ukus img{
     width: 40vw;
-    border: rgba(75, 8, 8, 0.569) 15px groove;
+    border: #a64a83 15px groove;
 }
 
 .ukus h3{
     font-size: 1.6rem;
-    color: rgb(75, 8, 8);
+    color: rgb(114, 31, 31);
     text-align: center;
     text-shadow: rgb(243, 142, 209) 5px 0px 4px;
 }

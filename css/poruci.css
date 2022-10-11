@@ -5,6 +5,10 @@ header{
 .cetiri img{
     width: 50%;
 }
+#head h1{
+  font-size: 5rem;
+
+}
 
 /* ****
 *****MAIN section
@@ -16,7 +20,7 @@ header{
     width: 100vw;
     text-align: center;
     background-color: rgba(255, 255, 255, 0.185);
-    padding: 10vh 0;
+    padding: 10vh 5vw;
 }
 .koraci h2{
     color: darkred;
@@ -33,13 +37,12 @@ header{
 ******FORM
 *********** */
 #forma{
-    background-image: url(../img/chocolate.jpg);
-    background-size: cover;
-    margin-right: 10vw;
-    width: 30vw;
+  background-image: url(../img/chocolate.jpg);
+  background-size: cover;
+  width: 25vw;
   text-align: center;
   padding: 50px;
-  margin: 0 auto;
+  margin: 0 5vw;
   width: 40vw;
   color: white;
 }
@@ -47,11 +50,11 @@ header{
 #forma_email, #forma_ime, #grad, #forma_poruka{
   width: 30vw;
   margin: 20px 0;
-  border: 5px solid darkred;
+  border: 5px solid #791245;
 }
 
 button{
-  background-color: brown;
+  background-color: #791245;
   border: 5px solid darkred;
   border-radius: 30%;
   color: rgb(255, 240, 242);
@@ -79,7 +82,11 @@ input.invalid, textarea.invalid{
 input.valid, textarea.valid{
 	border: 2px solid green;
 }
-
+#mapa{
+  margin: 0 25vw;
+  width: 50vw;
+  padding-top: 2vh;
+}
 @media only screen and (width<=750px) {
     .nav .dva{
       display: none;

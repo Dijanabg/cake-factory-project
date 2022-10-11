@@ -96,3 +96,12 @@ $("#forma_submit").click(function(event){
 		alert('No errors: Form will be submitted');
 	}
 });
+
+$(window).scroll(function() {    // kada skrolamo ovo ce raditi
+	let height = $(window).scrollTop();  //visina skrol nava
+	if(height  > 10) {
+		$(".nav").css({"position": "fixed"});
+	} else{
+		$(".nav").css({"position": "relative"});
+	}
+});
