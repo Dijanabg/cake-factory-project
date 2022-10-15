@@ -1,4 +1,4 @@
-header{
+header {
     height: 400px;
     background-image: url(../img/blog6.jpg);
     background-size: cover;
@@ -6,27 +6,29 @@ header{
     background-color: transparent;
 }
 
-.cetiri img{
+.cetiri img {
     width: 50%;
 }
 
-#phead{
-    padding: 30%;
+#phead {
+    padding: 10%;
 }
 
-.articles{
+.articles {
     grid-template-columns: repeat(2, 40vw);
     padding: 10% 0;
     row-gap: 10%;
 
 }
-.article{
-    width: 40vw;
+
+.article {
+    display: grid;
+    height: max-content;
 }
-.article img{
-    width: 39.25vw;
-  }
-.article h2{
+
+
+
+.article h2 {
     text-align: center;
     padding: 0;
 }

@@ -1,184 +1,202 @@
 <!DOCTYPE html>
 <html lang="en">
-	<head>
-    	<meta charset="utf-8">
-    	<meta name="description" content="This is where your description goes">
-    	<meta name="keywords" content="one, two, three">
 
-		<title>Title in the tab</title>
-		<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-		<!-- external CSS link -->
-		<link rel="stylesheet" href="css/style.css">
-		<link rel="stylesheet" href="css/galerija.css">
-		
-	</head>
-	<body>
-		<!-- HEADER, NAV -->
-		<nav class="nav">
-			<div class="jedan">
-				<img src="img/logo.png" alt="OMG-torte">
-				<a href="index.html"><span id="span1">OMG torte</span></a>
+<head>
+	<meta charset="utf-8">
+	<meta name="description" content="This is where your description goes">
+	<meta name="keywords" content="one, two, three">
+
+	<title>Title in the tab</title>
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+	<!-- external CSS link -->
+	<link rel="stylesheet" href="css/style.css">
+	<link rel="stylesheet" href="css/galerija.css">
+
+</head>
+
+<body>
+	<!-- HEADER, NAV -->
+	<nav class="nav">
+		<div class="jedan">
+			<img src="img/logo.png" alt="OMG-torte">
+			<a href="index.html"><span id="span1">OMG torte</span></a>
+		</div>
+		<div class="dva">
+			<ul>
+				<li><a href="index.html">Home</a></li>
+				<li><a href="galerija.html" class="active">Galerija</a></li>
+				<li><a href="onama.html">O nama</a></li>
+				<li><a href="poruci.html">Poruči</a></li>
+				<li><a href="blog.html">Blog</a></li>
+			</ul>
+		</div>
+		<div class="ikona">
+			<a href="#" class="fa fa-instagram"> </a>
+		</div>
+		<!-- BURGER -->
+		<div class="burger">
+			<div id="menu-bar" onclick="menuOnClick()">
+				<div id="bar1" class="bar"></div>
+				<div id="bar2" class="bar"></div>
+				<div id="bar3" class="bar"></div>
+				<div id="bar4" class="bar"></div>
+				<div id="bar5" class="bar"></div>
 			</div>
-			<div class="dva">
+			<div class="burger-nav" id="burger-nav">
 				<ul>
-					<li><a href="index.html">Home</a></li>
-					<li><a href="galerija.html" class="active">Galerija</a></li>
-					<li><a href="onama.html">O nama</a></li>
-					<li><a href="poruci.html">Poruči</a></li>
-					<li><a href="blog.html">Blog</a></li>
+					<li>
+						<a href="index.html">HOME</a>
+					</li>
+					<li>
+						<a href="galerija.html">GALERIJA</a>
+					</li>
+					<li>
+						<a href="poruci.html">PORUČI</a>
+					</li>
+					<li>
+						<a href="onama.html">O NAMA</a>
+					</li>
+					<li>
+						<a href="blog.html">BLOG</a>
+					</li>
 				</ul>
 			</div>
-			<div class="ikona">
-				<a href="#" class="fa fa-instagram"> </a>
+		</div>
+		<div class="menu-bg" id="menu-bg"></div>
+	</nav>
+	<!-- HEADER -->
+	<header>
+		<div id="head">
+			<div class="tri">
+				<h1 class="phead">Naše torte</h1>
+				<p class="phead">Svi naši proizvodi prave se od visoko kvalitetnih i svežih namirnica. Svadbene,
+					svečane, dečije i druge torte odlikuje obilje lešnika, badema, oraha, voća i kremova koji se prave
+					na tradicionalan način, bez korišćenja gotovih smesa.</p>
 			</div>
-			<!-- BURGER -->
-			<div class="burger">
-				<p class="burger-icon">Meni</p>
-				<ul class="burger-menu">
-				  <li class="burger-menu-item">
-					<a href="index.html">HOME</a>
-				  </li>
-				  <li class="burger-menu-item">
-					<a href="galerija.html">GALERIJA</a>
-				  </li>
-				  <li class="burger-menu-item">
-					<a href="poruci.html">PORUČI</a>
-				</li>
-				  <li class="burger-menu-item">
-					<a href="onama.html">O NAMA</a>
-				</li>
-				</ul>
-			  </div>
-		</nav>
-		<!-- HEADER -->
-		<header>
-			<div id="head">
-				<div class="tri">
-					<h1 class="phead">Naše torte</h1>
-				<p class="phead">Svi naši proizvodi prave se od visoko kvalitetnih i svežih namirnica. Svadbene, svečane, dečije i druge torte odlikuje obilje lešnika, badema, oraha, voća i kremova koji se prave na tradicionalan način, bez korišćenja gotovih smesa.</p>
-				</div>
-				<div class="cetiri">
-					<img src="img/cake3.png" alt="">
-				</div>
+			<div class="cetiri">
+				<img src="img/cake3.png" alt="">
 			</div>
-			
-		</header>
-		<!-- END HEADER, NAV -->
-		<main>
+		</div>
+
+	</header>
+	<!-- END HEADER, NAV -->
+	<main>
 		<!-- galerija -->
 		<section class="galerija">
 			<div class="container">
-			  <ul class="list">
-				<li class="img active" data-class="all">ALL</li>
-				<li class="img" data-class="dečije">DEČIJE</li>
-				<li class="img" data-class="svadbene">SVADBENE</li>
-				<li class="img" data-class="razno">RAZNE</li>
-				<li class="img" data-class="kolaci">KOLAČI</li>
-			  </ul>
+				<ul class="list">
+					<li class="img active" data-class="all">ALL</li>
+					<li class="img" data-class="dečije">DEČIJE</li>
+					<li class="img" data-class="svadbene">SVADBENE</li>
+					<li class="img" data-class="razno">RAZNE</li>
+					<li class="img" data-class="kolaci">KOLAČI</li>
+				</ul>
 			</div>
 			<div class="container2 ">
-			  <div class="img images" data-class="dečije">
-				<img src="img/dec9.PNG" alt="">
-			  </div>
-			  <div class="img images" data-class="svadbene">
-				<img src="img/wed15.PNG" alt="">
-			  </div>
-			  <div class="img images" data-class="razno">
-				<img src="img/slika6.PNG" alt="">
-			  </div>
-			  <div class="img images" data-class="dečije">
-				<img src="img/dec3.PNG" alt="">
-			  </div>
-			  <div class="img images" data-class="svadbene">
-				<img src="img/wed2.PNG" alt="">
-			  </div>
-			  <div class="img images" data-class="razno">
-				<img src="img/slika2.PNG" alt="">
-			  </div>
-			  <div class="img images" data-class="dečije">
-				<img src="img/dec13.PNG" alt="">
-			  </div>
-			  <div class="img images" data-class="kolaci">
-				<img src="img/kolaci1.PNG" alt="">
-			  </div>
-			  <div class="img images" data-class="dečije">
-				<img src="img/dec4.PNG" alt="">
-			  </div>
-			  <div class="img images" data-class="svadbene">
-				<img src="img/wed7.PNG" alt="">
-			  </div>
-			  <div class="img images" data-class="razno">
-				<img src="img/slika3.PNG" alt="">
-			  </div>
-			  <div class="img images" data-class="dečije">
-				<img src="img/dec5.PNG" alt="">
-			  </div>
-			  <div class="img images" data-class="svadbene">
-				<img src="img/wed8.PNG" alt="">
-			  </div>
-			  <div class="img images" data-class="razno">
-				<img src="img/slika4.PNG" alt="">
-			  </div>
-			  <div class="img images" data-class="dečije">
-				<img src="img/dec16.PNG" alt="">
-			  </div>
-			  <div class="img images" data-class="kolaci">
-				<img src="img/kolaci2.PNG" alt="">
-			  </div>
-			  <div class="img images" data-class="dečije">
-				<img src="img/dec10.PNG" alt="">
-			  </div>
-			  <div class="img images" data-class="svadbene">
-				<img src="img/wed4.PNG" alt="">
-			  </div>
-			  <div class="img images" data-class="razno">
-				<img src="img/slika8.PNG" alt="">
-			  </div>
-			  <div class="img images" data-class="dečije">
-				<img src="img/dec11.PNG" alt="">
-			  </div>
-			  <div class="img images" data-class="svadbene">
-				<img src="img/wed6.PNG" alt="">
-			  </div>
-			  <div class="img images" data-class="razno">
-				<img src="img/slika10.PNG" alt="">
-			  </div>
-			  <div class="img images" data-class="dečije">
-				<img src="img/dec19.PNG" alt="">
-			  </div>
-			  <div class="img images" data-class="kolaci">
-				<img src="img/kolaci3.PNG" alt="">
-			  </div>
-			</div>
-		  </section>
-  	</main>
-		<!-- FOOTER -->
-		<footer>
-			<div class="footer">
-				<div class="foot1">
-					<h3>Meni</h3>
-					<ul>
-						<li><a href="index.html">Home</a></li>
-						<li><a href="galerija.html">Galerija</a></li>
-						<li><a href="onama.html">O nama</a></li>
-						<li><a href="poruci.html">Kontakt</a></li>
-					</ul>
+				<div class="img images" data-class="dečije">
+					<img src="img/dec9.PNG" alt="">
 				</div>
-				<div class="foot2">
-					<h3>Kontaktirajte nas</h3>
-					<ul>
-						<li><a href="#" class="fa fa-facebook"> </a></li>
-						<li><a href="#" class="fa fa-instagram"> </a></li>
-						<li><a href="#" class="fa  fa-phone"></a></li>
-					</ul>
+				<div class="img images" data-class="svadbene">
+					<img src="img/wed15.PNG" alt="">
+				</div>
+				<div class="img images" data-class="razno">
+					<img src="img/slika6.PNG" alt="">
+				</div>
+				<div class="img images" data-class="dečije">
+					<img src="img/dec3.PNG" alt="">
+				</div>
+				<div class="img images" data-class="svadbene">
+					<img src="img/wed2.PNG" alt="">
+				</div>
+				<div class="img images" data-class="razno">
+					<img src="img/slika2.PNG" alt="">
+				</div>
+				<div class="img images" data-class="dečije">
+					<img src="img/dec13.PNG" alt="">
+				</div>
+				<div class="img images" data-class="kolaci">
+					<img src="img/kolaci1.PNG" alt="">
+				</div>
+				<div class="img images" data-class="dečije">
+					<img src="img/dec4.PNG" alt="">
+				</div>
+				<div class="img images" data-class="svadbene">
+					<img src="img/wed7.PNG" alt="">
+				</div>
+				<div class="img images" data-class="razno">
+					<img src="img/slika3.PNG" alt="">
+				</div>
+				<div class="img images" data-class="dečije">
+					<img src="img/dec5.PNG" alt="">
+				</div>
+				<div class="img images" data-class="svadbene">
+					<img src="img/wed8.PNG" alt="">
+				</div>
+				<div class="img images" data-class="razno">
+					<img src="img/slika4.PNG" alt="">
+				</div>
+				<div class="img images" data-class="dečije">
+					<img src="img/dec16.PNG" alt="">
+				</div>
+				<div class="img images" data-class="kolaci">
+					<img src="img/kolaci2.PNG" alt="">
+				</div>
+				<div class="img images" data-class="dečije">
+					<img src="img/dec10.PNG" alt="">
+				</div>
+				<div class="img images" data-class="svadbene">
+					<img src="img/wed4.PNG" alt="">
+				</div>
+				<div class="img images" data-class="razno">
+					<img src="img/slika8.PNG" alt="">
+				</div>
+				<div class="img images" data-class="dečije">
+					<img src="img/dec11.PNG" alt="">
+				</div>
+				<div class="img images" data-class="svadbene">
+					<img src="img/wed6.PNG" alt="">
+				</div>
+				<div class="img images" data-class="razno">
+					<img src="img/slika10.PNG" alt="">
+				</div>
+				<div class="img images" data-class="dečije">
+					<img src="img/dec19.PNG" alt="">
+				</div>
+				<div class="img images" data-class="kolaci">
+					<img src="img/kolaci3.PNG" alt="">
 				</div>
 			</div>
-			<p>Copyright &copy; Dijana 2022 All Rights Reserved</p>
-		</footer>
+		</section>
+	</main>
+	<!-- FOOTER -->
+	<footer>
+		<div class="footer">
+			<div class="foot1">
+				<h3>Meni</h3>
+				<ul>
+					<li><a href="index.html">Home</a></li>
+					<li><a href="galerija.html">Galerija</a></li>
+					<li><a href="onama.html">O nama</a></li>
+					<li><a href="poruci.html">Kontakt</a></li>
+				</ul>
+			</div>
+			<div class="foot2">
+				<h3>Kontaktirajte nas</h3>
+				<ul>
+					<li><a href="#" class="fa fa-facebook"> </a></li>
+					<li><a href="#" class="fa fa-instagram"> </a></li>
+					<li><a href="#" class="fa  fa-phone"></a></li>
+				</ul>
+			</div>
+		</div>
+		<p>Copyright &copy; Dijana 2022 All Rights Reserved</p>
+	</footer>
 
 
 
-		<script src="https://code.jquery.com/jquery-3.6.1.js" integrity="sha256-3zlB5s2uwoUzrXK3BT7AX3FyvojsraNFxCc2vC/7pNI=" crossorigin="anonymous"></script>
-		<script type="text/javascript" src="js/main.js"></script>
-	</body>
+	<script src="https://code.jquery.com/jquery-3.6.1.js"
+		integrity="sha256-3zlB5s2uwoUzrXK3BT7AX3FyvojsraNFxCc2vC/7pNI=" crossorigin="anonymous"></script>
+	<script type="text/javascript" src="js/main.js"></script>
+</body>
+
 </html>

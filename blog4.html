@@ -1,150 +1,186 @@
 <!DOCTYPE html>
 <html lang="en">
-	<head>
-    	<meta charset="utf-8">
-    	<meta name="description" content="This is where your description goes">
-    	<meta name="keywords" content="one, two, three">
 
-		<title>Title in the tab</title>
-		<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-		<!-- external CSS link -->
-		
-		<link rel="stylesheet" href="css/style.css">
-        <link rel="stylesheet" href="css/blog1.css">
-        <link rel="stylesheet" href="css/blog4.css">
-	</head>
-	<body>
-		<!--  NAV -->
-		<nav class="nav">
+<head>
+	<meta charset="utf-8">
+	<meta name="description" content="This is where your description goes">
+	<meta name="keywords" content="one, two, three">
 
-			<div class="jedan">
-				<img src="img/logo.png" alt="OMG-torte">
-				<a href="index.html"><span id="span1">OMG torte</span></a>
+	<title>Title in the tab</title>
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+	<!-- external CSS link -->
+
+	<link rel="stylesheet" href="css/style.css">
+	<link rel="stylesheet" href="css/blog1.css">
+	<link rel="stylesheet" href="css/blog4.css">
+</head>
+
+<body>
+	<!--  NAV -->
+	<nav class="nav">
+
+		<div class="jedan">
+			<img src="img/logo.png" alt="OMG-torte">
+			<a href="index.html"><span id="span1">OMG torte</span></a>
+		</div>
+
+		<div class="dva">
+			<ul>
+				<li><a href="index.html">Home</a></li>
+				<li><a href="galerija.html">Galerija</a></li>
+				<li><a href="onama.html">O nama</a></li>
+				<li><a href="poruci.html">Poruči</a></li>
+				<li><a href="blog.html" class="active">Blog</a></li>
+			</ul>
+		</div>
+		<div class="ikona">
+			<a href="#" class="fa fa-instagram"> </a>
+		</div>
+		<!-- BURGER -->
+		<div class="burger">
+			<div id="menu-bar" onclick="menuOnClick()">
+				<div id="bar1" class="bar"></div>
+				<div id="bar2" class="bar"></div>
+				<div id="bar3" class="bar"></div>
+				<div id="bar4" class="bar"></div>
+				<div id="bar5" class="bar"></div>
 			</div>
-
-			<div class="dva">
+			<div class="burger-nav" id="burger-nav">
 				<ul>
-					<li><a href="index.html"  >Home</a></li>
-					<li><a href="galerija.html">Galerija</a></li>
-					<li><a href="onama.html">O nama</a></li>
-					<li><a href="poruci.html">Poruči</a></li>
-					<li><a href="blog.html" class="active">Blog</a></li>
+					<li>
+						<a href="index.html">HOME</a>
+					</li>
+					<li>
+						<a href="galerija.html">GALERIJA</a>
+					</li>
+					<li>
+						<a href="poruci.html">PORUČI</a>
+					</li>
+					<li>
+						<a href="onama.html">O NAMA</a>
+					</li>
+					<li>
+						<a href="blog.html">BLOG</a>
+					</li>
 				</ul>
 			</div>
-			<div class="ikona">
-				<a href="#" class="fa fa-instagram"> </a>
+		</div>
+		<div class="menu-bg" id="menu-bg"></div>
+	</nav>
+	<!-- HEADER -->
+	<header>
+		<div id="head">
+			<div class="tri">
+				<h1 id="phead" class="h1">Svadbene torte – poručivanje</h1>
 			</div>
-			<!-- BURGER -->
-			<div class="burger">
-				<p class="burger-icon">Meni</p>
-				<ul class="burger-menu">
-				  <li class="burger-menu-item">
-					<a href="index.html">HOME</a>
-				  </li>
-				  <li class="burger-menu-item">
-					<a href="galerija.html">GALERIJA</a>
-				  </li>
-				  <li class="burger-menu-item">
-					<a href="poruci.html">PORUČI</a>
-				</li>
-				  <li class="burger-menu-item">
-					<a href="onama.html">O NAMA</a>
-				</li>
-				</ul>
-			  </div>
-		</nav>
-		<!-- HEADER -->
-		<header>
-			<div id="head">
-				<div class="tri">
-					<h1 id="phead" class="h1">Svadbene torte – poručivanje</h1>
-				</div>
+		</div>
+	</header>
+	<!-- END HEADER, NAV -->
+	<main>
+		<div class="div div1">
+			<p>Ukoliko ste odlučili da svoje poverenje ukažete <br> baš nama u poslastičarnici OMG torte <br> ovo su
+				neke osnovne informacije koje želimo da podelimo sa vama, <br> a koje se tiču samog procesa naručivanja.
+			</p>
+		</div>
+		<div class="div div2">
+			<div>
+				<h2>KOLIČINA TORTE JE BITNA</h2>
 			</div>
-		</header>
-		<!-- END HEADER, NAV -->
-		<main>
-			<div class="div div1">
-                <p>Ukoliko ste odlučili da svoje poverenje ukažete <br> baš nama u poslastičarnici OMG torte <br> ovo su neke osnovne informacije koje želimo da podelimo sa vama, <br> a koje se tiču samog procesa naručivanja.
-                </p>
-            </div>
-            <div class="div div2">
-                <div>
-                    <h2>KOLIČINA TORTE JE BITNA</h2>
-                </div>
-                <div>
-                    <img src="img/wed15.PNG" alt="">
-                    <p>Pre samog procesa poručivanja, važno je da pravilno odredite koliku tortu želite odnosno, koja količina vam je potrebna.
+			<div>
+				<img src="img/wed15.PNG" alt="">
+				<p>Pre samog procesa poručivanja, važno je da pravilno odredite koliku tortu želite odnosno, koja
+					količina vam je potrebna.
 					<br>
 					U poslastičarnici „OMG torte“ savetujemo da parče torte bude između 150 i 200 grama po osobi.
-					<br>	
-					Odredite broj gostiju i koliko će biti dovoljno, ali uvek ostavite prostor za nešto veću i težu tortu.
-                    </p>
-                </div>
-            </div>
-            <div class="div div3">
-                <h2>IZGLED I DEKORACIJA TORTE</h2>
-                <p>Poslastičarnica „OMG torte“ nudi veliki broj i različit izgled svadbenih torti između kojih možete da izabere baš onu koja je za vas.
+					<br>
+					Odredite broj gostiju i koliko će biti dovoljno, ali uvek ostavite prostor za nešto veću i težu
+					tortu.
+				</p>
+			</div>
+		</div>
+		<div class="div div3">
+			<h2>IZGLED I DEKORACIJA TORTE</h2>
+			<p>Poslastičarnica „OMG torte“ nudi veliki broj i različit izgled svadbenih torti između kojih možete da
+				izabere baš onu koja je za vas.
 				<br>
-				A u dogovoru sa našim poslastičarima i dekoraterima možemo ih prilagoditi vašim željama i potrebama. Pre svega, mi smo tu da ispunimo vase zamisli i da zajedno stvorimo uspomenu koja će da ostane za ceo život.
-            	</p>
-            </div>
-            <div class="div div4">
-                <div>
-                    <h2>Šta je važno da znate kada birate svadbenu tortu?</h2>
-                </div>
-                <div>
-                    <img src="img/wed11.PNG" alt="">
-                    <p>
-                        Cena torte ne zavisi od ukusa ili dekoracije kao što su šlag i fondan, ali vrh torte, kao i dodatni dekorativni detalji, prirodni ili veštački, nisu deo prvobitne cene. Oni mogu da se naruče, ali se dodatno plaćaju.
-						<br><br>
-    					Figurice mladenaca možete da poručite i kupite ili da ih iznajmite uz tortu i vratite.
-    					Težina stalka za tortu ne ulazi u težinu torte, nije sastavni deo torte i isti je potrebno vratiti kroz tri dana.
-                    </p>
-                </div>
-				<div>
-					<p>
-						Sve dekoracije su podložne promenama u skladu sa vašim željama i našim mogućnostima izrade. Napominjemo da svaki ukus ne odgovara svakom izgledu i dekoraciji i da je potrebno voditi računa o sigurnosti i stabilnosti izrade torte odnosno o čvrstoći. <br>
-    					Sve torte sa fotografija u <b><a href="galerija.html">Galeriji</a></b> su dostupne u originalnom izdanju, ukuse možete da menjate i to ne utiče na cenu, ali može da utiče na raspored dekoracija. <br>
-    					Sve torte možete poručiti telefonski; naši menadžeri su vam dostupni od 7h do 22h, a možete i da zakažete konsultacije i lično nas posetite u poslastičarnici. Sastanci se zakazuju od ponedeljka do četvrtka, pre ili posle podne. <br>
-    					Sastanci i konsultacije nisu obavezni. Ukoliko niste u mogućnosti da nas posetite sve može da se organizuje telefonski, ali naša preporuka je da nas svakako posetite da bismo se dogovorili oko svih detalja i da biste bili u potpunosti zadovoljni. <br>
-    					Konsultacije i degustacija su besplatni, potrebno je samo da na vreme dogovorite svoj termin. <br>
-    					Plaćanje se vrši avansno, 10% ili 20% prilikom poručivanja ili najkasnije tri dana pre potrebne dostave i zakazanog datuma. Preostali iznos plaćate najkasnije tri dana kasnija, uz vraćanje stalka i dodatne opreme i nejestive dekoracije. <br>
-    					Za sva preostala pitanja i nedoumice možete da nas kontaktirate putem društvenim mreža, na info mail ili broj telefona. Rado ćemo odgovoriti na sva vaša pitanja jer nam je vaše zadovoljstvo na prvom mestu.
-					</p>
-				</div>
-            </div>
-			
-			<!-- <div class="linija">
+				A u dogovoru sa našim poslastičarima i dekoraterima možemo ih prilagoditi vašim željama i potrebama. Pre
+				svega, mi smo tu da ispunimo vase zamisli i da zajedno stvorimo uspomenu koja će da ostane za ceo život.
+			</p>
+		</div>
+		<div class="div div4">
+			<div>
+				<h2>Šta je važno da znate kada birate svadbenu tortu?</h2>
+			</div>
+			<div>
+				<img src="img/wed11.PNG" alt="">
+				<p>
+					Cena torte ne zavisi od ukusa ili dekoracije kao što su šlag i fondan, ali vrh torte, kao i dodatni
+					dekorativni detalji, prirodni ili veštački, nisu deo prvobitne cene. Oni mogu da se naruče, ali se
+					dodatno plaćaju.
+					<br><br>
+					Figurice mladenaca možete da poručite i kupite ili da ih iznajmite uz tortu i vratite.
+					Težina stalka za tortu ne ulazi u težinu torte, nije sastavni deo torte i isti je potrebno vratiti
+					kroz tri dana.
+				</p>
+			</div>
+			<div>
+				<p>
+					Sve dekoracije su podložne promenama u skladu sa vašim željama i našim mogućnostima izrade.
+					Napominjemo da svaki ukus ne odgovara svakom izgledu i dekoraciji i da je potrebno voditi računa o
+					sigurnosti i stabilnosti izrade torte odnosno o čvrstoći. <br>
+					Sve torte sa fotografija u <b><a href="galerija.html">Galeriji</a></b> su dostupne u originalnom
+					izdanju, ukuse možete da menjate i to ne utiče na cenu, ali može da utiče na raspored dekoracija.
+					<br>
+					Sve torte možete poručiti telefonski; naši menadžeri su vam dostupni od 7h do 22h, a možete i da
+					zakažete konsultacije i lično nas posetite u poslastičarnici. Sastanci se zakazuju od ponedeljka do
+					četvrtka, pre ili posle podne. <br>
+					Sastanci i konsultacije nisu obavezni. Ukoliko niste u mogućnosti da nas posetite sve može da se
+					organizuje telefonski, ali naša preporuka je da nas svakako posetite da bismo se dogovorili oko svih
+					detalja i da biste bili u potpunosti zadovoljni. <br>
+					Konsultacije i degustacija su besplatni, potrebno je samo da na vreme dogovorite svoj termin. <br>
+					Plaćanje se vrši avansno, 10% ili 20% prilikom poručivanja ili najkasnije tri dana pre potrebne
+					dostave i zakazanog datuma. Preostali iznos plaćate najkasnije tri dana kasnija, uz vraćanje stalka
+					i dodatne opreme i nejestive dekoracije. <br>
+					Za sva preostala pitanja i nedoumice možete da nas kontaktirate putem društvenim mreža, na info mail
+					ili broj telefona. Rado ćemo odgovoriti na sva vaša pitanja jer nam je vaše zadovoljstvo na prvom
+					mestu.
+				</p>
+			</div>
+		</div>
+
+		<!-- <div class="linija">
 
 			</div>  -->
-		</main>
-        <!-- FOOTER -->
-		<footer>
-			<div class="footer">
-				<div class="foot1">
-					<h3>Meni</h3>
-					<ul>
-						<li><a href="index.html">Home</a></li>
-						<li><a href="galerija.html">Galerija</a></li>
-						<li><a href="onama.html">O nama</a></li>
-						<li><a href="poruci.html">Kontakt</a></li>
-					</ul>
-				</div>
-				<div class="foot2">
-					<h3>Kontaktirajte nas</h3>
-					<ul>
-						<li><a href="#" class="fa fa-facebook"> </a></li>
-						<li><a href="#" class="fa fa-instagram"> </a></li>
-						<li><a href="#" class="fa  fa-phone"></a></li>
-					</ul>
-				</div>
+	</main>
+	<!-- FOOTER -->
+	<footer>
+		<div class="footer">
+			<div class="foot1">
+				<h3>Meni</h3>
+				<ul>
+					<li><a href="index.html">Home</a></li>
+					<li><a href="galerija.html">Galerija</a></li>
+					<li><a href="onama.html">O nama</a></li>
+					<li><a href="poruci.html">Kontakt</a></li>
+				</ul>
 			</div>
-			<p>Copyright &copy; Dijana 2022 All Rights Reserved</p>
-		</footer>
+			<div class="foot2">
+				<h3>Kontaktirajte nas</h3>
+				<ul>
+					<li><a href="#" class="fa fa-facebook"> </a></li>
+					<li><a href="#" class="fa fa-instagram"> </a></li>
+					<li><a href="#" class="fa  fa-phone"></a></li>
+				</ul>
+			</div>
+		</div>
+		<p>Copyright &copy; Dijana 2022 All Rights Reserved</p>
+	</footer>
 
 
 
-		<script src="https://code.jquery.com/jquery-3.6.1.js" integrity="sha256-3zlB5s2uwoUzrXK3BT7AX3FyvojsraNFxCc2vC/7pNI=" crossorigin="anonymous"></script>
-		<script type="text/javascript" src="js/main.js"></script>
-	</body>
+	<script src="https://code.jquery.com/jquery-3.6.1.js"
+		integrity="sha256-3zlB5s2uwoUzrXK3BT7AX3FyvojsraNFxCc2vC/7pNI=" crossorigin="anonymous"></script>
+	<script type="text/javascript" src="js/main.js"></script>
+</body>
+
 </html>

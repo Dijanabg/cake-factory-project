@@ -1,196 +1,227 @@
 <!DOCTYPE html>
 <html lang="en">
-	<head>
-    	<meta charset="utf-8">
-    	<meta name="description" content="This is where your description goes">
-    	<meta name="keywords" content="one, two, three">
 
-		<title>Title in the tab</title>
-		<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-		<!-- external CSS link -->
-		
-		<link rel="stylesheet" href="css/style.css">
-	</head>
-	<body>
-		<!--  NAV -->
-		<nav class="nav">
-			<div class="jedan">
-				<img src="img/logo.png" alt="OMG-torte">
-				<a href="index.html"><span id="span1">OMG torte</span></a>
+<head>
+	<meta charset="utf-8">
+	<meta name="description" content="This is where your description goes">
+	<meta name="keywords" content="one, two, three">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+	<title>Title in the tab</title>
+
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+	<!-- external CSS link -->
+
+	<link rel="stylesheet" href="css/style.css">
+</head>
+
+<body>
+	<!--  NAV -->
+	<nav class="nav">
+		<div class="jedan">
+			<img src="img/logo.png" alt="OMG-torte">
+			<a href="index.html"><span id="span1">OMG torte</span></a>
+		</div>
+		<div class="dva">
+			<ul>
+				<li><a href="index.html" class="active">Home</a></li>
+				<li><a href="galerija.html">Galerija</a></li>
+				<li><a href="onama.html">O nama</a></li>
+				<li><a href="poruci.html">Poruči</a></li>
+				<li><a href="blog.html">Blog</a></li>
+			</ul>
+		</div>
+		<div class="ikona">
+			<a href="#" class="fa fa-instagram"> </a>
+		</div>
+		<!-- burger meni -->
+		<div class="burger">
+			<div id="menu-bar" onclick="menuOnClick()">
+				<div id="bar1" class="bar"></div>
+				<div id="bar2" class="bar"></div>
+				<div id="bar3" class="bar"></div>
+				<div id="bar4" class="bar"></div>
+				<div id="bar5" class="bar"></div>
 			</div>
-			<div class="dva">
+			<div class="burger-nav" id="burger-nav">
 				<ul>
-					<li><a href="index.html" class="active" >Home</a></li>
-					<li><a href="galerija.html">Galerija</a></li>
-					<li><a href="onama.html">O nama</a></li>
-					<li><a href="poruci.html">Poruči</a></li>
-					<li><a href="blog.html">Blog</a></li>
+					<li>
+						<a href="index.html">HOME</a>
+					</li>
+					<li>
+						<a href="galerija.html">GALERIJA</a>
+					</li>
+					<li>
+						<a href="poruci.html">PORUČI</a>
+					</li>
+					<li>
+						<a href="onama.html">O NAMA</a>
+					</li>
+					<li>
+						<a href="blog.html">BLOG</a>
+					</li>
 				</ul>
 			</div>
-			<div class="ikona">
-				<a href="#" class="fa fa-instagram"> </a>
+		</div>
+		<div class="menu-bg" id="menu-bg"></div>
+	</nav>
+	<!-- HEADER -->
+	<header>
+		<div id="head">
+			<div class="tri">
+				<h1 class="phead">Slatkoća Tradicionalnih Ukusa</h1>
+				<p class="phead">Kolači i torte radionice <strong>OMG torte</strong> poznate su po vrhunskom kvalitetu i
+					ukusu. Prave se na tradicionalan način, po staroj, oprobanoj recepturi. Osim starih i dobro
+					prepoznatljivih ukusa stvorili smo i jedinstvene recepte za pojedine vrste torti i kolača.</p>
 			</div>
-			<!-- burger meni -->
-			<div class="burger">
-				<p class="burger-icon">Meni</p>
-				<ul class="burger-menu">
-				  <li class="burger-menu-item">
-					<a href="index.html">HOME</a>
-				  </li>
-				  <li class="burger-menu-item">
-					<a href="galerija.html">GALERIJA</a>
-				  </li>
-				  <li class="burger-menu-item">
-					<a href="poruci.html">PORUČI</a>
-				</li>
-				  <li class="burger-menu-item">
-					<a href="onama.html">O NAMA</a>
-				</li>
-				</ul>
-			  </div>
-		</nav>
-		<!-- HEADER -->
-		<header>
-			<div id="head">
-				<div class="tri">
-					<h1 class="phead">Slatkoća Tradicionalnih Ukusa</h1>
-				<p class="phead">Kolači i torte radionice <strong>OMG torte</strong> poznate su po vrhunskom kvalitetu i ukusu. Prave se na tradicionalan način, po staroj, oprobanoj recepturi. Osim starih i dobro prepoznatljivih ukusa stvorili smo i jedinstvene recepte za pojedine vrste torti i kolača.</p>
-				</div>
 
-				<div class="cetiri">
-					<img src="img/blog-img2.png" alt="">
-				</div>
+			<div class="cetiri">
+				<img src="img/blog-img2.png" alt="">
 			</div>
-		</header>
-		<!-- END HEADER, NAV -->
-		
-			<!-- div koji vodi na stranicu galerija -->
-		<main>
-			<div class="row">
-				<div class="col">
-					<h2>Naše torte</h2>
-					<p>Svi naši proizvodi prave se od visoko kvalitetnih i svežih namirnica. Svadbene, svečane, dečije i druge torte odlikuje obilje lešnika, badema, oraha, voća i kremova koji se prave na tradicionalan način, bez korišćenja gotovih smesa.
-					</p>
-					<a href="galerija.html"><button class="button">Otkrij</button></a>
-				</div>
-				<div class="col">
-					<div class="colCard">
-						<a href="galerija.html">
-							<div class="card card1">
-								<h5>Venčanja</h5>
-							</div>
-						</a>
-						<a href="galerija.html">
-							<div class="card card2">
-								<h5>Dečije</h5>
-							</div>
-						</a>
-					</div>
-					<div class="colCard">
-						<a href="galerija.html">
-							<div class="card card3">
-								<h5>Razno</h5>
-							</div>
-						</a>
-						<a href="galerija.html">
-							<div class="card card4">
-								<h5>Kolači</h5>
-							</div>
-						</a>
-					</div>
-				</div>
+		</div>
+	</header>
+	<!-- END HEADER, NAV -->
+
+	<!-- div koji vodi na stranicu galerija -->
+	<main>
+		<div class="row">
+			<div class="col">
+				<h2>Naše torte</h2>
+				<p>Svi naši proizvodi prave se od visoko kvalitetnih i svežih namirnica. Svadbene, svečane, dečije i
+					druge torte odlikuje obilje lešnika, badema, oraha, voća i kremova koji se prave na tradicionalan
+					način, bez korišćenja gotovih smesa.
+				</p>
+				<a href="galerija.html"><button class="button">Otkrij</button></a>
 			</div>
-			<!-- div koji vodi na stranicu o nama -->
-			<div class="onama">
-				<div class="radnja">
-					<img src="img/radnja2.jpg" alt="Proizvodnja">
-				</div>
-				<div class="rad">
-					<h2>O nama</h2>
-					<h3>Sa vama više od 20 godina</h3>
-					<p>OMG torte stvaraju slatku tradiciju u okolini Kosmaja od 2001. godine, kada smo postali neizostavni deo svih važnih događaja ljubitelja prefinjenih domaćih ukusa.
-					</p>
-					<a href="onama.html"><button class="button">Otkrij ko smo</button></a>
-				</div>
-			</div>
-			<!-- blog -->
-			<div class="blog">
-				<h2 class="blog1">Blog</h2>
-				<div class="articles">
-					<div class="article article1">
-						<img src="img/blog1.jpg" alt="">
-						<div>
-							<h2>Kako čuvati i zamrzavati torte i kolače?</h2>
-							<p>Za prave ljubitelje poslastica pitanje: „Kako čuvati i zamrzavati torte i kolače“ možda se čini suvišnim, a odgovor očiglednim. </p>
-							<a href="blog1.html"><button class="button">Pročitaj više</button></a>
+			<div class="col">
+				<div class="colCard">
+					<a href="galerija.html">
+						<div class="card card1">
+							<h5>Venčanja</h5>
 						</div>
-					</div>
-					<div class="article article2">
-						<img src="img/blog2.jpg" alt="">
-						<div>
-							<h2>Zanimljivi svet čokolade</h2>
-							<p>Verujemo da među vama ima mnogo onih kojima je nezamisliv svet bez čokolade i da ne može da vam prođe dan bez ove čarobne poslastice.</p>
-							<a href="blog1.html"><button class="button">Pročitaj više</button></a></div>
-					</div>
-					<div class="article article2">
-						<img src="img/blog3.jpg" alt="">
-						<div>
-							<h2>Savršena svadbena torta</h2>
-							<p>Svadbena torta često zadaje glavobolje mladencima kada počnu da planiraju venčanje. Koliko kilograma je dovoljno za određeni broj gostiju? Koliko spratova</p>
-							<a href="blog1.html"><button class="button">Pročitaj više</button></a>
+					</a>
+					<a href="galerija.html">
+						<div class="card card2">
+							<h5>Dečije</h5>
 						</div>
+					</a>
+				</div>
+				<div class="colCard">
+					<a href="galerija.html">
+						<div class="card card3">
+							<h5>Razno</h5>
+						</div>
+					</a>
+					<a href="galerija.html">
+						<div class="card card4">
+							<h5>Kolači</h5>
+						</div>
+					</a>
+				</div>
+			</div>
+		</div>
+		<!-- div koji vodi na stranicu o nama -->
+		<div class="onama">
+			<div class="radnja">
+				<img src="img/radnja2.jpg" alt="Proizvodnja">
+			</div>
+			<div class="rad">
+				<h2>O nama</h2>
+				<h3>Sa vama više od 20 godina</h3>
+				<p>OMG torte stvaraju slatku tradiciju u okolini Kosmaja od 2001. godine, kada smo postali neizostavni
+					deo svih važnih događaja ljubitelja prefinjenih domaćih ukusa.
+				</p>
+				<a href="onama.html"><button class="button">Otkrij ko smo</button></a>
+			</div>
+		</div>
+		<!-- blog -->
+		<div class="blog">
+			<h2 class="blog1">Blog</h2>
+			<div class="articles">
+				<div class="article article1">
+					<img src="img/blog1.jpg" alt="">
+					<div>
+						<h2>Kako čuvati i zamrzavati torte i kolače?</h2>
+						<p>Za prave ljubitelje poslastica pitanje: „Kako čuvati i zamrzavati torte i kolače“ možda se
+							čini suvišnim, a odgovor očiglednim. </p>
+						<a href="blog1.html"><button class="button">Pročitaj više</button></a>
+					</div>
+				</div>
+				<div class="article article2">
+					<img src="img/blog2.jpg" alt="">
+					<div>
+						<h2>Zanimljivi svet čokolade</h2>
+						<p>Verujemo da među vama ima mnogo onih kojima je nezamisliv svet bez čokolade i da ne može da
+							vam prođe dan bez ove čarobne poslastice.</p>
+						<a href="blog1.html"><button class="button">Pročitaj više</button></a>
+					</div>
+				</div>
+				<div class="article article2">
+					<img src="img/blog3.jpg" alt="">
+					<div>
+						<h2>Savršena svadbena torta</h2>
+						<p>Svadbena torta često zadaje glavobolje mladencima kada počnu da planiraju venčanje. Koliko
+							kilograma je dovoljno za određeni broj gostiju? Koliko spratova</p>
+						<a href="blog1.html"><button class="button">Pročitaj više</button></a>
 					</div>
 				</div>
 			</div>
-			<!-- div koji vodi na stranicu poruci -->
-			<div class="poruci">
-				<div class="poziv">
-					<h2>Kako do torte iz snova</h2>
+		</div>
+		<!-- div koji vodi na stranicu poruci -->
+		<div class="poruci">
+			<div class="poziv">
+				<h2>Kako do torte iz snova</h2>
 				<h4>Imate ideju, imate dizajn, odabrali ste ukuse <br> >> kliknite na dugme na slici </h4>
-				<br><h4>Imate ideju, imate dizajn, niste sigurni za ukuse <br> >> kliknite na dugme na slici</h4>
-				<br><h4>Imate ideju, nemate dizajn, odabrali ste ukuse <br> >> kliknite na dugme na slici</h4>
-				<br><h4>Zelite da vam damo savet, sugestiju i da zajedno donesemo odluku <br> >> kliknite na dugme na slici</h4>
-				</div>
-				<div class="slika">
-					<img src="img/radnja1.jpg" alt="">
-					<a href="poruci.html"><button class="button">Poruči</button></a>
-				</div>
+				<br>
+				<h4>Imate ideju, imate dizajn, niste sigurni za ukuse <br> >> kliknite na dugme na slici</h4>
+				<br>
+				<h4>Imate ideju, nemate dizajn, odabrali ste ukuse <br> >> kliknite na dugme na slici</h4>
+				<br>
+				<h4>Zelite da vam damo savet, sugestiju i da zajedno donesemo odluku <br> >> kliknite na dugme na slici
+				</h4>
 			</div>
-			<!-- 
+			<div class="slika">
+				<img src="img/radnja1.jpg" alt="">
+				<a href="poruci.html"><button class="button">Poruči</button></a>
+			</div>
+		</div>
+		<!-- 
 				trenutno visak
 			<div class="linija">
 
 			</div> -->
-		</main>
-		<!-- FOOTER -->
-		<footer>
-			<div class="footer">
-				<div class="foot1">
-					<h3>Meni</h3>
-					<ul>
-						<li><a href="index.html">Home</a></li>
-						<li><a href="galerija.html">Galerija</a></li>
-						<li><a href="onama.html">O nama</a></li>
-						<li><a href="poruci.html">Kontakt</a></li>
-					</ul>
-					
-					
-				</div>
-				<div class="foot2">
-					<h3>Kontaktirajte nas</h3>
-					<ul>
-						<li><a href="#" class="fa fa-facebook"> </a></li>
-						<li><a href="#" class="fa fa-instagram"> </a></li>
-						<li><a href="#" class="fa  fa-phone"></a></li>
-					</ul>
-				</div>
+	</main>
+	<!-- FOOTER -->
+	<footer>
+		<div class="footer">
+			<div class="foot1">
+				<h3>Meni</h3>
+				<ul>
+					<li><a href="index.html">Home</a></li>
+					<li><a href="galerija.html">Galerija</a></li>
+					<li><a href="onama.html">O nama</a></li>
+					<li><a href="poruci.html">Kontakt</a></li>
+				</ul>
+
+
 			</div>
-			<p>Copyright &copy; Dijana 2022 All Rights Reserved</p>
-		</footer>
+			<div class="foot2">
+				<h3>Kontaktirajte nas</h3>
+				<ul>
+					<li><a href="#" class="fa fa-facebook"> </a></li>
+					<li><a href="#" class="fa fa-instagram"> </a></li>
+					<li><a href="#" class="fa  fa-phone"></a></li>
+				</ul>
+			</div>
+		</div>
+		<p>Copyright &copy; Dijana 2022 All Rights Reserved</p>
+	</footer>
 
 
 
-		<script src="https://code.jquery.com/jquery-3.6.1.js" integrity="sha256-3zlB5s2uwoUzrXK3BT7AX3FyvojsraNFxCc2vC/7pNI=" crossorigin="anonymous"></script>
-		<script type="text/javascript" src="js/main.js"></script>
-	</body>
+	<script src="https://code.jquery.com/jquery-3.6.1.js"
+		integrity="sha256-3zlB5s2uwoUzrXK3BT7AX3FyvojsraNFxCc2vC/7pNI=" crossorigin="anonymous"></script>
+	<script type="text/javascript" src="js/main.js"></script>
+</body>
+
 </html>

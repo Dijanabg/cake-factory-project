@@ -1,85 +1,66 @@
-.tajna{
-    padding: 5% 10% 10% 10%;
-    background-color: rgba(255, 255, 255, 0.535);
+.tajna {
+  padding: 5% 10% 0% 10%;
+  /* background-color: rgba(255, 255, 255, 0.185); */
 }
 
-.tajna h2 {
-    font-size: 2rem;
-    color: #4a0a0b;
-    font-family: Verdana, Geneva, Tahoma, sans-serif;
-    /* text-shadow: rgb(255, 0, 170) 10px 0 20px; */
-    text-align: center;
-    padding-bottom: 10%;
+/* .tajna h2 {
+  font-size: 2rem;
+  color: #faf7f7;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+ text-shadow: rgb(255, 0, 170) 10px 0 20px; 
+text-align: center;
+padding-bottom: 10%;
+} */
+
+.tajna p {
+  color: rgb(114, 31, 31);
+  font-size: 1.3rem;
+  padding-top: 3%;
 }
 
-.tajna p{
-    color: rgb(114, 31, 31);
-    font-size: 1.3rem;
-    padding-top: 3%;
+.ukus {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 100%;
 }
 
-.tajna img{
-    height: 285px; 
-} 
-
-.ukus{
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    margin-bottom: 4%;
+.ukus div {
+  width: 50%;
+  padding: 0 5%;
 }
 
-.ukus div{
-    width: 50%;
-    padding: 0 5%;
+.ukus img {
+  width: 50%;
+  height: 30vw;
+  border: #a64a83 15px groove;
 }
 
-.ukus img{
-    width: 40vw;
-    border: #a64a83 15px groove;
+.ukus h3 {
+  font-size: 1.6rem;
+  color: rgb(114, 31, 31);
+  text-align: center;
+  text-shadow: rgb(243, 142, 209) 5px 0px 4px;
 }
 
-.ukus h3{
-    font-size: 1.6rem;
-    color: rgb(114, 31, 31);
-    text-align: center;
-    text-shadow: rgb(243, 142, 209) 5px 0px 4px;
-}
-
-@media only screen and (width<=750px) {
-    .nav .dva{
-      display: none;
-    }
-  
-    .fa-instagram{
-      display: none;
-    }
-  
-    .burger {
-      display: block;
-      /* display: flex;
-      justify-content: space-between;
-      align-items: center; */
-      color:#791245;
-      font-size: 1.2rem;
-      font-weight: 700;
-    }
-  
-    .burger-icon{
-      padding: 0 2% ;
-    }
-  
-    .burger:hover > .burger-menu{
-      display: block;
-      margin: 100px 0;
-      color: #791245;
-      background-color: #e6afd1;
-      list-style: none;
-      
-    }
-  
-    .burger-menu{
-      color: #340708;
-      padding: 50px 10px 10px 10px;
-    }
+@media only screen and (max-device-width: 768px) {
+  .ukus {
+    flex-direction: column;
+    width: 100%;
   }
+
+  .ukus div {
+    width: 100%;
+    padding: 0 5%;
+  }
+
+  .ukus img {
+    width: 100%;
+    height: 40vw;
+    border: #a64a83 15px groove;
+  }
+
+  .ukus:nth-child(2) {
+    flex-direction: column-reverse;
+  }
+}

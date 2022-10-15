@@ -10,9 +10,10 @@
 .color5 {color: #E80F88} 
 */
 @import url('https://fonts.googleapis.com/css2?family=Allura&display=swap');
+
 /* font-family: 'Allura', cursive, sans-serif; */
 /* Box Model Hack */
-*{
+* {
   box-sizing: border-box;
   font-family: 'Poppins', sans-serif;
   margin: 0;
@@ -23,7 +24,7 @@
   transition: .2s linear;
 }
 
-html{
+html {
   font-size: 62.5%;
   overflow-x: hidden;
   scroll-padding-top: 7rem;
@@ -34,7 +35,8 @@ html{
 
 .button {
   width: 50%;
-  margin-top: 5vh; /*izmena sa 10%!!!!!!!!!!*/
+  margin-top: 5vh;
+  /*izmena sa 10%!!!!!!!!!!*/
   background-color: #791245;
   padding: 2% 3%;
   font-weight: 700;
@@ -45,7 +47,7 @@ html{
   font-size: 1rem;
 }
 
-.button a{
+.button a {
   color: #fff;
 }
 
@@ -53,33 +55,40 @@ html{
   background-color: #df3ca8;
 }
 
-h1{
+h1 {
   font-size: 6rem;
 }
-h2,h3,h4,h5,h6{
+
+h2,
+h3,
+h4,
+h5,
+h6 {
   color: #340708;
 }
 
-p{
-  color:darkred;
+p {
+  color: darkred;
 }
 
-h2{
+h2 {
   color: #df3ca8;
   font-size: 4rem;
   font-family: 'Allura', cursive, sans-serif;
   padding-bottom: 10px;
 }
-h4{
+
+h4 {
   font-size: 1rem;
   color: #fff;
   text-shadow: rgb(255, 0, 170) 1px 0 10px;
 }
-a{
+
+a {
   color: #340708;
 }
 
-a:hover{
+a:hover {
   color: #df3ca8;
 }
 
@@ -87,14 +96,14 @@ a:hover{
 *****HEADER SECTION
 ***********
 ********* */
-header{
+header {
   clip-path: polygon(0 0, 100% 0, 100% 100%, 0 85%);
   background-color: #e6afd1;
   height: max-content;
   padding-bottom: 5%;
 }
 
-.nav{
+.nav {
   display: flex;
   justify-content: space-around;
   height: 50px;
@@ -107,52 +116,54 @@ header{
   background-color: #945d7f8e;
 }
 
-.nav:hover{
+.nav:hover {
   background-color: #945d7f;
 }
 
-.nav a:hover{
+.nav a:hover {
   color: #df3ca8;
 }
 
-.nav .active{
+.nav .active {
   background-color: #791245;
   color: antiquewhite;
   padding: 5% 10%;
 }
-.ikona .fa-instagram{
+
+.ikona .fa-instagram {
   color: #fff;
   font-size: 1.5rem;
 }
-.dva ul{
+
+.dva ul {
   list-style: none;
   display: flex;
   justify-content: space-between;
 
 }
 
-.dva ul li a{
+.dva ul li a {
   font-weight: 700;
   margin: 0 3rem;
   color: #fff;
   font-size: 1.1rem;
 }
 
-.jedan{
+.jedan {
   display: flex;
 }
 
-.jedan img{
+.jedan img {
   width: 2.5rem;
 }
 
-#span1{
+#span1 {
   align-self: center;
-  color:#fff;
+  color: #fff;
   font-size: 1.2rem;
 }
 
-#head{
+#head {
   width: 100%;
   display: flex;
   justify-content: space-around;
@@ -161,25 +172,25 @@ header{
   /* padding-left: 50px; */
 }
 
-.tri{
+.tri {
   width: 100%;
   padding: 5% 10%;
 }
 
-.cetiri{
+.cetiri {
   width: 100%;
   padding-top: 5%;
 }
 
-.cetiri img{
+.cetiri img {
   width: 80%;
 }
 
-#head h1{
+#head h1 {
   color: #ee5cbe;
   text-shadow: #0b0106 1px 0 5px;
   text-align: center;
-  font-family: 'Allura', cursive, sans-serif; 
+  font-family: 'Allura', cursive, sans-serif;
 }
 
 /******************************************
@@ -192,6 +203,7 @@ BURGER MENI
 .burger-menu {
   display: none;
 }
+
 /******************************************
 /* sekcija GALERIJA
 /******************************************/
@@ -201,30 +213,33 @@ BURGER MENI
   height: max-content;
   align-items: center;
   justify-content: space-around;
-padding: 10%;
+  padding: 10%;
 }
-.col:nth-child(2){
+
+.col:nth-child(2) {
   display: flex;
   justify-content: space-between;
   width: 70%;
 }
-.col:first-child{
+
+.col:first-child {
   width: 30%;
   padding-right: 5%;
   text-align: center;
 }
 
-.colCard{
+.colCard {
   display: flex;
   justify-content: space-around;
   width: 100%;
 }
-.col h2{
+
+.col h2 {
   color: #340708;
   text-shadow: rgb(255, 0, 170) 1px 0 10px;
 }
 
-.col p{
+.col p {
   color: white;
 }
 
@@ -249,7 +264,7 @@ padding: 10%;
   background-size: cover;
   transition: transform 0.5s;
 }
-  
+
 .card1 {
   background-image: url(../img/wed15.PNG);
 }
@@ -257,6 +272,7 @@ padding: 10%;
 .card2 {
   background-image: url(../img/dec15.PNG);
 }
+
 .card3 {
   background-image: url(../img/slika12.PNG);
 }
@@ -273,18 +289,19 @@ padding: 10%;
   color: #fff;
   background-color: #791245;
   width: 50%;
-  padding:  5% 0;
+  padding: 5% 0;
   text-align: center;
   text-shadow: 0 0 5px #df3ca8;
   text-transform: uppercase;
 }
+
 /* ********
 **********
 ********sekcija O NAMA
 ************
 ********* */
 
-.onama{
+.onama {
   clip-path: polygon(0 16%, 100% 0%, 100% 100%, 0 84%);
   display: flex;
   justify-content: center;
@@ -294,47 +311,51 @@ padding: 10%;
   padding: 10%;
 }
 
-.radnja{
+.radnja {
   width: 50%;
 }
 
-.radnja img{
+.radnja img {
   width: 100%;
   border: 10px groove #791245;
   border-radius: 15px;
 }
 
-.onama .rad{
+.onama .rad {
   width: 50%;
   margin-left: 10%;
 }
-.rad h2{
+
+.rad h2 {
   color: #340708;
   text-shadow: rgb(255, 0, 170) 1px 0 10px;
 }
-.rad h3{
+
+.rad h3 {
   font-size: 1.5rem;
-  padding-bottom:  10px;
+  padding-bottom: 10px;
   color: #791245;
   text-shadow: rgb(255, 0, 170) 1px 0 10px;
 }
 
-.rad button{
+.rad button {
   text-align: center;
   margin-top: 20px;
-  width: 50%;
+  /* width: 100%; */
 }
+
 /* ******
 *****
 ***sekcija BLOG
 **************
 ***************** */
-.blog1{
+.blog1 {
   padding-left: 11rem;
   color: #340708;
   text-shadow: rgb(255, 0, 170) 1px 0 10px;
 }
-.articles{
+
+.articles {
   padding: 0rem 3rem 5rem 3rem;
   display: grid;
   grid-template-columns: repeat(3, 25vw);
@@ -342,30 +363,32 @@ padding: 10%;
   justify-content: center;
 }
 
-.article{
+.article {
   background: #f9f9f9;
   border: 5px solid #791245;
   border-radius: 2%;
   width: 100%;
 }
 
-.article img{
+.article img {
   width: 100%;
 }
 
-.article h2{
+.article h2 {
   font-family: Verdana, Geneva, Tahoma, sans-serif;
   font-size: 1.4rem;
   text-align: center;
   margin: 2rem 1rem;
   color: #9c034f;
-} 
-.article p{
+}
+
+.article p {
   margin: 1rem;
 }
-.article .button{
+
+.article .button {
   width: 50%;
- margin: 0.3rem 0 0.8rem 1rem;
+  margin: 0.3rem 0 0.8rem 1rem;
 }
 
 /* *****
@@ -374,7 +397,7 @@ padding: 10%;
 ******
 ************** */
 
-.poruci{
+.poruci {
   clip-path: polygon(0 16%, 100% 0%, 100% 100%, 0 84%);
   background-color: #e6afd1;
   display: flex;
@@ -384,57 +407,58 @@ padding: 10%;
   padding: 10% 10%;
 }
 
-.poziv{
+.poziv {
   text-align: center;
   width: 50%;
   padding-right: 5%;
 }
 
-.poziv h2{
+.poziv h2 {
   padding-bottom: 10%;
   color: #340708;
   text-shadow: rgb(255, 0, 170) 1px 0 10px;
 }
 
-.poziv h3{
+.poziv h3 {
   color: #fff;
   text-shadow: rgb(255, 0, 170) 1px 0 10px;
   padding: 10px;
 }
 
-.slika{
+.slika {
   align-self: center;
   position: relative;
   width: 50%;
   height: auto;
 }
 
-.slika img{
+.slika img {
   border: 15px groove #791245;
   border-radius: 15px;
   width: 100%;
 }
 
-.slika a .button{
+.slika a .button {
   width: 15vw;
   position: absolute;
   top: 50%;
   left: 45%;
   transform: translate(-50%, -50%);
 }
+
 /* *******
 ******
 ****FOOTER
 *******
 *** */
-.linija{
+.linija {
   width: 100%;
   height: 200px;
   background-color: #e6afd1;
   clip-path: polygon(0 96%, 100% 10%, 100% 100%, 0% 100%);
 }
 
-.footer{
+.footer {
   height: 200px;
   display: flex;
   justify-content: space-around;
@@ -443,33 +467,36 @@ padding: 10%;
   margin: 10% 5% 0 5%;
 }
 
-.footer h3{
+.footer h3 {
   font-size: 1.5rem;
   color: #791245;
 }
 
-.foot1 ul, .foot2 ul{
+.foot1 ul,
+.foot2 ul {
   list-style: none;
   text-align: center;
   font-size: 1.5rem;
 }
 
-.foot2 ul{
+.foot2 ul {
   display: flex;
   justify-content: space-around;
   padding-top: 20px;
 }
 
-.foot1 li a, .foot2 li a{
+.foot1 li a,
+.foot2 li a {
   color: white;
   font-size: 1.2rem;
 }
 
-.foot1 li a:hover, .foot2 li a:hover{
+.foot1 li a:hover,
+.foot2 li a:hover {
   color: #df3ca8;
 }
 
-footer p{
+footer p {
   color: #791245;
   text-align: center;
   font-size: 1.2rem;
@@ -478,136 +505,289 @@ footer p{
 
 
 
-@media ( max-width: 970px) {
-  p{
+@media (max-width: 970px) {
+  p {
     font-size: 0.9rem;
   }
-  h1{
+
+  h1 {
     font-size: 4rem;
   }
+
   /*section GALERIJA*/
-  .row{
+  .row {
     flex-direction: column;
     padding-top: 5vh;
   }
-  .col:first-child{
+
+  .col {
+    padding-right: 0;
+  }
+
+  .col:first-child {
     width: 100%;
   }
-  .col:first-child .button{
+
+  .col:first-child .button {
     margin: 5vh 0;
   }
-  .col:nth-child(2){
+
+  .col:nth-child(2) {
     width: 90%;
   }
+
   .card {
     width: 17vw;
     height: 35vh;
   }
-  .dva ul li a{
+
+  .dva ul li a {
     margin: 0 2rem;
     font-size: 1.1rem;
   }
-  h2{
+
+  h2 {
     font-size: 3.5rem;
   }
-  h3{
+
+  h3 {
     font-size: 2.5rem;
   }
- .poruci{
-  padding: 20% 10%;
- }
+
+  .poruci {
+    padding: 20% 10%;
+  }
 }
-@media only screen and (width<=750px) {
-  .nav .dva{
+
+@media only screen and (max-device-width: 768px) {
+  .nav .dva {
     display: none;
   }
 
-  .nav .fa-instagram{
+  .nav .fa-instagram {
     display: none;
+  }
+
+  .nav {
+    justify-content: flex-start;
   }
 
   .burger {
+    align-self: center;
     display: block;
-    color:#791245;
-    font-size: 1.2rem;
-    font-weight: 700;
+    z-index: 99;
   }
 
-  .burger-icon{
-    padding: 0 2% ;
-    color: white;
+  .burger-nav {
+    z-index: 98;
+    display: block;
   }
 
-  .burger:hover > .burger-menu{
+  #menu-bar {
+    width: 45px;
+    height: 40px;
+    cursor: pointer;
+  }
+
+  .bar {
+    height: 5px;
+    width: 100%;
+    background-color: #f8f5f5;
     display: block;
-    margin: 100px 0;
-    color: #791245;
-    background-color: #e6afd1;
+    border-radius: 5px;
+    transition: 0.3s ease;
+  }
+
+  #bar1 {
+    transform: translateY(-4px);
+  }
+
+  #bar3 {
+    transform: translateY(4px);
+  }
+
+  #bar5 {
+    display: none;
+  }
+
+  .burger-nav {
+    transition: 0.3s ease;
+    display: none;
+  }
+
+  .burger-nav ul {
+    padding: 0 22px;
+  }
+
+  .burger-nav li {
     list-style: none;
-    
+    padding: 12px 0;
   }
 
-  .burger-menu{
-    color: #340708;
-    padding: 50px 10px 10px 10px;
+  .burger-nav li a {
+    color: white;
+    font-size: 20px;
+    text-decoration: none;
   }
-}
-@media ( max-width: 660px){
-  p{
+
+  .burger-nav li a:hover {
+    font-weight: bold;
+  }
+
+  .menu-bg,
+  .burger {
+    top: 3%;
+    right: 10%;
+    position: fixed;
+  }
+
+  .menu-bg {
+    z-index: 1;
+    width: 0;
+    height: 0;
+    margin: 30px 0 20px 20px;
+    background: radial-gradient(circle, #791245, #791245);
+    border-radius: 50%;
+    transition: 0.3s ease;
+  }
+
+  .change {
+    display: block;
+  }
+
+  .change .bar {
+    background-color: white;
+  }
+
+  .change #bar1 {
+    transform: translateY(4px) rotateZ(-45deg);
+  }
+
+  .change #bar2 {
+    opacity: 0;
+  }
+
+  .change #bar3 {
+    transform: translateY(-6px) rotateZ(45deg);
+  }
+
+  .change #bar4 {
+    opacity: 0;
+  }
+
+  .change #bar5 {
+    opacity: 0;
+  }
+
+  .change-bg {
+    width: 520px;
+    height: 460px;
+    transform: translate(58%, -30%);
+  }
+
+  /* *****section GALERIJA */
+  .col {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .col:first-child {
+    padding-right: 0;
+  }
+
+  .card {
+    width: 40vw;
+    height: 35vh;
+  }
+
+  /* section o nama */
+  .onama {
+    flex-direction: column;
+    padding: 20% 10%;
+  }
+
+  .radnja {
+    width: 80%;
+  }
+
+  .onama .rad {
+    width: 80%;
+    margin-left: 0;
+    align-self: center;
+  }
+
+  .rad button {
+    text-align: center;
+    margin-left: auto;
+    margin-top: 20px;
+  }
+
+  p {
     font-size: 0.9rem;
   }
-  h1{
+
+  h1 {
     font-size: 3rem;
   }
-  
-  h2{
+
+  h2 {
     font-size: 2.5rem;
   }
 
-  h4{
+  h4 {
     font-size: 0.8rem;
     padding-bottom: 5px;
   }
 
-  .poruci{
+  .poruci {
     flex-direction: column;
   }
-  .poziv{
+
+  .poziv {
     width: 100%;
     margin: 0;
-   padding: 0;
+    padding: 0;
   }
-  .poziv h2{
+
+  .poziv h2 {
     padding-bottom: 10px;
   }
-  br{
+
+  br {
     display: none;
   }
-  .articles{
+
+  /* blog */
+  .articles {
     grid-template-columns: none;
     padding: 0 15%;
   }
-  .article{
+
+  .article {
     display: grid;
-    
+
     height: max-content;
   }
-  .article h2{
+
+  .article h2 {
     font-size: 1rem;
     margin: 0;
     padding-bottom: 5px;
   }
-  .article p{
+
+  .article p {
     margin: 0 2rem;
     font-size: 0.8rem;
     text-align: center;
   }
-.article .button{
-  font-size: 0.7rem;
-  width: 100%;
-  margin: 0;
-}
-.article a{
-  justify-self: center;
-}
+
+  .article .button {
+    font-size: 0.7rem;
+    width: 100%;
+    margin: 0;
+  }
+
+  .article a {
+    justify-self: center;
+  }
 }
