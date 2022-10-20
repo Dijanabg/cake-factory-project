@@ -174,7 +174,8 @@ header {
 
 .tri {
   width: 100%;
-  padding: 5% 10%;
+  padding: 5% 5% 10% 10%;
+
 }
 
 .cetiri {
@@ -439,10 +440,10 @@ BURGER MENI
 }
 
 .slika a .button {
-  width: 15vw;
+  width: 80%;
   position: absolute;
   top: 50%;
-  left: 45%;
+  left: 50%;
   transform: translate(-50%, -50%);
 }
 
@@ -636,7 +637,7 @@ footer p {
 
   .menu-bg,
   .burger {
-    top: 3%;
+    top: 20px;
     right: 10%;
     position: fixed;
   }
@@ -651,6 +652,7 @@ footer p {
     transition: 0.3s ease;
   }
 
+  /* on click change burger meni */
   .change {
     display: block;
   }
@@ -682,7 +684,7 @@ footer p {
   .change-bg {
     width: 520px;
     height: 460px;
-    transform: translate(58%, -30%);
+    transform: translate(55%, -20%);
   }
 
   /* *****section GALERIJA */
@@ -701,9 +703,10 @@ footer p {
   }
 
   /* section o nama */
-  .onama {
+  .onama,
+  .poruci {
     flex-direction: column;
-    padding: 20% 10%;
+    padding: 25% 10%;
   }
 
   .radnja {
@@ -739,10 +742,6 @@ footer p {
     padding-bottom: 5px;
   }
 
-  .poruci {
-    flex-direction: column;
-  }
-
   .poziv {
     width: 100%;
     margin: 0;
@@ -757,6 +756,15 @@ footer p {
     display: none;
   }
 
+  .slika {
+    padding-top: 2%;
+  }
+
+  .slika a .button {
+    width: 70%;
+    left: 50%;
+  }
+
   /* blog */
   .articles {
     grid-template-columns: none;
@@ -765,12 +773,15 @@ footer p {
 
   .article {
     display: grid;
-
     height: max-content;
   }
 
+  .article div {
+    padding: 20px 0;
+  }
+
   .article h2 {
-    font-size: 1rem;
+    font-size: 1.2rem;
     margin: 0;
     padding-bottom: 5px;
   }
@@ -779,6 +790,7 @@ footer p {
     margin: 0 2rem;
     font-size: 0.8rem;
     text-align: center;
+    padding: 5px 0;
   }
 
   .article .button {
@@ -789,5 +801,12 @@ footer p {
 
   .article a {
     justify-self: center;
+  }
+
+  .linija {
+    width: 100%;
+    height: 100px;
+    background-color: #e6afd1;
+    clip-path: polygon(0 96%, 100% 10%, 100% 100%, 0% 100%);
   }
 }

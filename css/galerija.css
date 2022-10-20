@@ -71,4 +71,16 @@
     width: 100%;
     justify-self: center;
   }
+
+  .list li {
+    font-size: 0.8rem;
+  }
+
+  .galerija .container2 {
+    padding-top: 10%;
+  }
+
+  .galerija .container2 .img:hover {
+    transform: scale(1.2);
+  }
 }

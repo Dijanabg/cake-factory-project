@@ -1,30 +1,33 @@
 /* ****
 *****MAIN section
 ************ */
-.kontakt{
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    width: 100vw;
-    text-align: center;
-    background-color: rgba(255, 255, 255, 0.185);
-    padding: 10vh 5vw;
+.kontakt {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 100vw;
+  text-align: center;
+  background-color: rgba(255, 255, 255, 0.185);
+  padding: 10vh 5vw;
 }
-.koraci h2{
-    color: darkred;
+
+.koraci h2 {
+  color: darkred;
 }
-.koraci{
-    padding-left: 5vw;
+
+.koraci {
+  padding-left: 5vw;
 }
-.koraci p{
-    font-size: 1.4rem;
-    padding-top: 5%;
+
+.koraci p {
+  font-size: 1.4rem;
+  padding-top: 5%;
 }
 
 /* ******
 ******FORM
 *********** */
-#forma{
+#forma {
   background-image: url(../img/chocolate.jpg);
   background-size: cover;
   width: 25vw;
@@ -35,80 +38,87 @@
   color: white;
 }
 
-#forma_email, #forma_ime, #grad, #forma_poruka{
+#forma_email,
+#forma_ime,
+#grad,
+#forma_poruka {
   width: 30vw;
   margin: 20px 0;
   border: 5px solid #791245;
 }
 
-button{
+button {
   background-color: #791245;
   border: 5px solid darkred;
   border-radius: 30%;
   color: rgb(255, 240, 242);
   margin-top: 10%;
 }
-#forma_poruka{
-    height: 200px;
+
+#forma_poruka {
+  height: 200px;
 }
 
 /* validacija */
-.error{
-	display: none;
-	margin-left: 10px;
-}		
-
-.error_show{
-	color: red;
-	margin-left: 10px;
+.error {
+  display: none;
+  margin-left: 10px;
 }
 
-input.invalid, textarea.invalid{
-	border: 2px solid red;
+.error_show {
+  color: red;
+  margin-left: 10px;
 }
 
-input.valid, textarea.valid{
-	border: 2px solid green;
+input.invalid,
+textarea.invalid {
+  border: 2px solid red;
 }
-#mapa{
-  margin: 0 25vw;
-  width: 50vw;
-  padding-top: 2vh;
+
+input.valid,
+textarea.valid {
+  border: 2px solid green;
 }
+
+#mapa {
+  margin: 0 10%;
+  margin-top: 3%;
+  width: 80vw;
+}
+
 @media only screen and (width<=750px) {
-    .nav .dva{
-      display: none;
-    }
-  
-    .fa-instagram{
-      display: none;
-    }
-  
-    .burger {
-      display: block;
-      /* display: flex;
-      justify-content: space-between;
-      align-items: center; */
-      color:#791245;
-      font-size: 1.2rem;
-      font-weight: 700;
-    }
-  
-    .burger-icon{
-      padding: 0 2% ;
-    }
-  
-    .burger:hover > .burger-menu{
-      display: block;
-      margin: 100px 0;
-      color: #791245;
-      background-color: #e6afd1;
-      list-style: none;
-      
-    }
-  
-    .burger-menu{
-      color: #340708;
-      padding: 50px 10px 10px 10px;
-    }
+  .kontakt {
+    flex-direction: column;
+    padding: 10vh 5vw;
+    padding-bottom: 0;
   }
+
+  .koraci {
+    padding: 0;
+    width: 100%;
+  }
+
+  #forma {
+    width: 100vw;
+  }
+
+  #forma_email,
+  #forma_ime,
+  #grad,
+  #forma_poruka {
+    width: 50vw;
+    margin: 20px auto;
+  }
+
+  #forma div {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    text-transform: uppercase;
+  }
+
+  #forma_submit button {
+    margin: auto;
+  }
+
+}

@@ -23,7 +23,7 @@ header {
 
 .article {
     display: grid;
-    height: max-content;
+    height: 600px;
 }
 
 
@@ -31,4 +31,28 @@ header {
 .article h2 {
     text-align: center;
     padding: 0;
+}
+
+@media (max-width: 970px) {
+    .article {
+        height: 500px;
+    }
+
+    .article .button {
+        width: max-content;
+        padding: 5px 10px;
+    }
+}
+
+@media only screen and (width<=750px) {
+    .articles {
+        grid-template-columns: none;
+        padding: 0 10%;
+        row-gap: 5px;
+    }
+
+    .article {
+        height: 500px;
+    }
+
 }

@@ -1,25 +1,25 @@
-const listItems = document.querySelectorAll('.galerija li');
+const listItems = document.querySelectorAll('.galerija li'); //dugmad
 const allimages = document.querySelectorAll('.galerija .container2 .images');
 
-function toggleActiveClass(active) {
+function toggleActiveClass(active) { // za svako dugme uklanja i dodale klasu active 
 	listItems.forEach(item => {
 		item.classList.remove('active');
 	})
 	active.classList.add('active');
 }
 
-function toggleimages(dataClass) {
+function toggleimages(dataClass) { //za svaku sliku ukoliko je klasa all tj dugme all, prikazuje kao blok
 	if (dataClass === 'all') {
 		for (let i = 0; i < allimages.length; i++) {
 			allimages[i].style.display = 'block';
 		}
-	} else {
+	} else { //a u slucaju da je klasa jednaka klasi dugmeta vrti petlju i prikazuje samo te slike
 		for (let i = 0; i < allimages.length; i++)
 			allimages[i].dataset.class === dataClass ? allimages[i].style.display = 'block' : allimages[i].style.display = 'none';
 	}
 }
 
-for (let i = 0; i < listItems.length; i++) {
+for (let i = 0; i < listItems.length; i++) { //radi na klik odredjenog dugmeta sa odredjenom klasom
 	listItems[i].addEventListener('click', function () {
 		toggleActiveClass(listItems[i]);
 		toggleimages(listItems[i].dataset.class);
@@ -54,7 +54,7 @@ $("#forma_ime").keyup(function () {
 		$(this).val($(this).val().substr(0, max));
 
 		//Take action, alert or whatever suits
-		alert("This field can take a maximum of 8 characters");
+		alert("Ovo polje može imati najviše 8 karaktera!");
 	}
 });
 $('#forma_ime').on('input', function () {
@@ -73,6 +73,7 @@ $('#forma_email').on('input', function () {
 });
 
 $('#forma_poruka').keyup(function (event) {
+	event.preventDefault();
 	let input = $(this);
 	let message = $(this).val();
 	console.log(message);
@@ -80,23 +81,23 @@ $('#forma_poruka').keyup(function (event) {
 	else { input.removeClass("valid").addClass("invalid"); }
 });
 $("#forma_submit").click(function (event) {
-	var form_data = $("#forma").serializeArray();
-	var error_free = true;
-	for (var input in form_data) {
-		var element = $("#forma_" + form_data[input]['name']);
-		var valid = element.hasClass("valid");
-		var error_element = $("span", element.parent());
+	let form_data = $("#forma").serializeArray();
+	let error_free = true;
+	for (let input in form_data) {
+		let element = $("#forma_" + form_data[input]['name']);
+		let valid = element.hasClass("valid");
+		let error_element = $("span", element.parent());
 		if (!valid) { error_element.removeClass("error").addClass("error_show"); error_free = false; }
-		else { error_element.removeClass("error_show").addClass("error"); }
+		else {
+			error_element.removeClass("error_show").addClass("error");
+			alert('No errors: Form will be submitted');
+		}
 	}
 	if (!error_free) {
 		event.preventDefault();
 	}
-	else {
-		alert('No errors: Form will be submitted');
-	}
 });
-
+//navigacioni meni scroll
 $(window).scroll(function () {    // kada skrolamo ovo ce raditi
 	let height = $(window).scrollTop();  //visina skrol nava
 	if (height > 10) {
@@ -105,6 +106,7 @@ $(window).scroll(function () {    // kada skrolamo ovo ce raditi
 		$(".nav").css({ "position": "relative" });
 	}
 });
+//hamburger meni on click
 function menuOnClick() {
 	document.getElementById("menu-bar").classList.toggle("change");
 	document.getElementById("burger-nav").classList.toggle("change");
